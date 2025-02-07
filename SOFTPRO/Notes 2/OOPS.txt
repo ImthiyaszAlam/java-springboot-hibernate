@@ -1,0 +1,67 @@
+Object oriented programming system:
+A mechanism of Sd .having four pillars.
+
+1:Abstraction: 
+2: Encapsulation
+3: Inheritance
+4: Polymorphism
+
+Any programming language which follows these four pillars is known as object oriented programming language.
+
+Abstraction:A mechanism to show only essential functionalities and hide all other functionalities of an object(Real world entity having it's own propweerties and functionalities);
+
+Encapsulation: A mechanism to warap up properties and functionalities in a single unit called object.
+
+Inheritance: A feature of OOP .we can create a new product using existing product.
+
+Polymorphism:the term polymorphism means one thing many forms.
+
+
+
+CLASS:blueprint of object. collection of variables and methods.
+created using keyword "class" followed by class name.the body of class is enclosed within braces'{}'
+syntax;
+class class_name{
+//variables
+//methods
+}
+
+example:
+class 
+
+Constructor:
+name as class name 
+no return type 
+get called automatically at the time of object creation
+
+
+INHERITANCE:
+single Inheritance:
+hierarchical Inheritance:
+Multi level
+
+single Inheritance:single base class and single derived class
+hierarchical Inheritance:single base but multiple derived class
+
+
+Method overloading:
+In java we can create multiple methods with same name in same class but their parameters should be different ,it's called method overloading 
+  
+
+Mthod overriding:
+rewriting of base class method in derived class .
+
+rules:
+1. class must be inherited 
+2. base class method name and derived class method name should be same .
+3.parameters should be same.
+
+
+
+
+
+
+
+
+
+

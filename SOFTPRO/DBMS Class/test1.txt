@@ -1,0 +1,252 @@
+1
+
+
+create databse practicedb
+
+CREATE TABLE userinfo(
+    firstname VARCHAR(50),
+    lastname VARCHAR(50),
+    contactno VARCHAR(50) PRIMARY KEY,
+    emailaddress VARCHAR(50)
+);
+
+
+ALTER TABLE
+    userinfo ADD COLUMN gender VARCHAR(6) AFTER lastname;
+
+
+
+2.
+
+INSERT INTO userinfo
+VALUES(
+    'Brijesh',
+    'Mishra',
+    'Male',
+    '9453318798',
+    'brijesh@gmail.com'
+),(
+    'Rajat',
+    'Verma',
+    'Male',
+    '9936652039',
+    'rajat@gmail.com'
+),(
+    'Nisha',
+    'Singh',
+    'Female',
+    '9559763249',
+    'nisha@gmail.com'
+),(
+    'Priya',
+    'Singh',
+    'Female',
+    '7753001621',
+    'priya@gmail.com'
+);
+
+
+
+3.
+i>
+SELECT
+    *
+FROM
+    `userinfo`;
+
+ii>
+
+SELECT
+    firstname,
+    lastname,
+    emailaddress
+FROM
+    `userinfo`;
+
+iii>
+
+SELECT
+    *
+FROM
+    `userinfo`
+WHERE
+    contactno = '9453318798'
+
+iv>
+
+SELECT
+    *
+FROM
+    `userinfo`
+WHERE
+    gender = 'Male'
+
+v>
+
+SELECT
+    COUNT(gender)
+FROM
+    `userinfo`
+WHERE
+    gender = 'Female'
+
+vi>
+
+UPDATE
+    userinfo
+SET
+    emailaddress = 'brijesh.22549@gmail.com'
+WHERE
+    contactno = '9453318798';
+
+vii>
+
+DELETE  FROM userinfo WHERE contactno = '7753001621';
+
+viii>
+TRUNCATE TABLE
+    userinfo;
+
+ix>
+
+DROP TABLE
+    userinfo;
+
+
+
+
+
+
+
+
+
+
+4.
+
+CREATE TABLE country(
+    countryid INT PRIMARY KEY AUTO_INCREMENT,
+    countryname VARCHAR(100)
+)
+
+
+CREATE TABLE state(
+    stated INT PRIMARY KEY AUTO_INCREMENT,
+    statename VARCHAR(100),
+    countryid INT,
+    FOREIGN KEY(countryid) REFERENCES country(countryid)
+);
+
+
+CREATE TABLE city(
+    cityid INT PRIMARY KEY AUTO_INCREMENT,
+    cityname VARCHAR(100),
+    stated INT,
+    FOREIGN KEY (stated) REFERENCES state(stateid)
+)
+
+
+
+
+
+
+5.
+
+
+CREATE TABLE logininfo(
+    userid INT PRIMARY KEY,
+    passwd VARCHAR(10) NOT NULL
+);
+
+
+
+
+
+
+6.
+
+i>
+
+ALTER TABLE
+    logininfo ADD COLUMN hintques VARCHAR(30);
+
+ii>
+
+ALTER TABLE
+    logininfo
+DROP COLUMN
+    hintques;
+
+iii>
+ALTER TABLE
+    logininfo MODIFY COLUMN passwd VARCHAR(15);
+
+
+
+
+
+7
+
+
+
+
+CREATE TABLE employees(
+    employeeid INT PRIMARY KEY,
+    employeename VARCHAR(20) NOT NULL
+);
+
+
+
+
+CREATE TABLE orders(
+    productid INT PRIMARY KEY,
+    product VARCHAR(20) NOT NULL,
+    employeeid INT,
+    FOREIGN KEY(employeeid) REFERENCES employees(employeeid)
+);
+
+
+
+
+8.
+
+INSERT INTO employees
+VALUES(1001, 'Karan'),(1002, 'Shikhar'),(1003, 'Rajan'),(1004, 'Priya');
+
+
+
+INSERT INTO orders
+VALUES(1, 'Table', '1001'),(2, 'Chair', '1002'),(3, 'Printer', '1003')
+
+INSERT INTO orders(productid, product)
+VALUES(4, 'Projector');
+
+
+
+9.
+i>
+
+SELECT
+    employees.employeename,
+    orders.product
+FROM
+    employees
+JOIN orders ON employees.employeeid = orders.employeeid;
+
+ii>
+
+SELECT
+    employees.employeename,
+    orders.product
+FROM
+    employees
+LEFT JOIN orders ON employees.employeeid = orders.employeeid;
+
+
+iii>
+
+SELECT
+    employees.employeename,
+    orders.product
+FROM
+    employees
+RIGHT JOIN orders ON employees.employeeid = orders.employeeid;

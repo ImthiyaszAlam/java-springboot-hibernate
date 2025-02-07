@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple Calculator</title>
+
+    <style>
+        body{
+            display: flex;
+            justify-content: center;
+            flex-direction: column;
+            background-color: grey;
+        }
+
+        h1{
+            text-align: center;
+        }
+        .mainContainer{
+            margin: auto;
+            height: 400px;
+            width: 500px;
+            background-color: black;
+            color: white;
+            display: flex;
+            justify-content: center;
+            flex-direction: column;
+            padding: 20px 50px;
+            font-size: 20px;
+            
+            
+        }
+
+        input{
+            margin-bottom: 20px;
+            width: 200px;
+            height: 50px;
+        }
+
+        .operators button{
+            height: 50px;
+            width: 50px;
+
+            margin-bottom: 20px;
+            text-align: center;
+        }
+
+        .operators{
+            padding: 5px 50px;
+            margin-left: 20px;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Simple Calculator</h1>
+
+    <div class="mainContainer">
+        <div class="num1div">
+            Number 1  <input type="text" id="num1">
+        </div>
+    
+        <div class="num2div">
+            Number 2  <input type="text" id="num2">
+        </div>
+    
+        <div class="operators">
+            <button onclick="add()">+</button>
+            <button onclick="subtract()">-</button>
+            <button onclick="multiply()">*</button>
+            <button onclick="divide()">/</button>
+        </div>
+    
+        <input type="text" name="" id="resultOutput">
+    
+    
+    </div>
+    
+
+    <script>
+        function add(){
+            let num1  = parseFloat(document.getElementById("num1").value);
+            let num2  = parseFloat(document.getElementById("num2").value);
+            let result = num1 +num2;
+            document.getElementById("resultOutput").value = result;
+
+        }
+
+        function subtract(){
+            let num1  = parseFloat(document.getElementById("num1").value);
+            let num2  = parseFloat(document.getElementById("num2").value);
+            let result = num1 -num2;
+            document.getElementById("resultOutput").value = result;
+
+        }
+
+        function multiply(){
+            let num1  = parseFloat(document.getElementById("num1").value);
+            let num2  = parseFloat(document.getElementById("num2").value);
+            let result = num1 *num2;
+            document.getElementById("resultOutput").value = result;
+
+        }
+
+        function divide(){
+            let num1  = parseFloat(document.getElementById("num1").value);
+            let num2  = parseFloat(document.getElementById("num2").value);
+            let result = num1 / num2;
+            document.getElementById("resultOutput").value = result;
+
+        }
+    </script>
+</body>
+</html>

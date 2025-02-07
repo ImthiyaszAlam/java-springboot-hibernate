@@ -1,0 +1,8 @@
+1. types of literals
+2. idfference Punctuators /separators:
+3. conditional operator (ternary operator) & Bitwise operator
+4. Size of data types 
+5. Tpes of access specifiers 
+6. find out remaining  easters 
+
+

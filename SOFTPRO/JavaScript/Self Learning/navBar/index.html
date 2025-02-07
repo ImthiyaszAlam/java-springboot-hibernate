@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Navbar</title>
+    <style>
+        .navbar{
+            display: flex;
+            justify-content: space-between;
+            padding: 2px 50px;
+            list-style: none;
+            list-style-type: none;
+            background-color: yellow;
+            align-items: center;
+        }
+        .navbar li{
+            list-style-type: none;
+        }
+
+        .aboutContainer{
+            display: inline-block;
+        }
+        .dropSection{
+            display: none;
+            height: auto;
+            width: 200px;
+            background-color: green;
+            color: white;
+        }
+        .conatainer{
+            height: 50px;
+            width: 200px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .conatainer:hover .dropSection{
+            display: block;
+        }
+    </style>
+</head>
+<body>
+
+    <ul class="navbar">
+        <div class="homeContainer">
+            <li>Home</li>
+        </div>
+
+        <div class="aboutContainer conatainer">
+                <li>About</li>
+                <div class="aboutDrop dropSection">
+                    <ul>
+                        <li>Chairman's Message</li>
+                        <li>Director's Message</li>
+                        <li>History</li>
+                        <li>Vision</li>
+                    </ul>
+                </div>
+
+        </div>
+
+        <div class="courseContainer conatainer">
+            <li>Courses</li>
+            <div class="courseDrop dropSection">
+                <ul>
+                    <li>CSE</li>
+                    <li>ME</li>
+                    <li>CE</li>
+                    <li>EE</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="facultyContainer conatainer">
+            <li>Faculty</li>
+            <div class="facultyDrop dropSection">
+                <ul>
+                    <li>Engineering</li>
+                    <li>Pharmacy</li>
+                    <li>BA</li>
+                    <li>B.com</li>
+                    <li>MBA</li>
+                </ul>
+            </div>
+        </div>
+    </ul>
+    
+</body>
+</html>

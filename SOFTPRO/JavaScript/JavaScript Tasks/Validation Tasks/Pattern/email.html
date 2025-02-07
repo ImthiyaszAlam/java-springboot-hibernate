@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Email Validation</title>
+
+    <script>
+        function checkEmail() {
+            var pemail = /^[^\s@]+@[^\s@]+\.[^\s@]+$/; 
+
+            var email = document.getElementById("email").value;
+
+            if (!pemail.test(email)) {
+                document.getElementById("span").innerHTML="<b>Email InValidated</b> "
+                document.getElementById("span").style.color="red "
+                document.getElementById("email").style.border="2px solid red";
+                document.getElementById("email").style.background=" red";
+                document.getElementById("email").style.textAlign=" center";
+                document.getElementById("email").style.borderRadius=" 15px";
+            } else {
+                document.getElementById("span").innerHTML="<b>Email Validated</b> "
+                document.getElementById("span").style.color="green "
+                document.getElementById("email").style.border="2px solid green";
+                document.getElementById("email").style.background=" green";
+                document.getElementById("email").style.textAlign=" center";
+                document.getElementById("email").style.borderRadius=" 15px";
+            }
+        }
+    </script>
+</head>
+<body>
+    <h1>Email Validation</h1> <br><br>
+    <input type="text" name="" id="email" placeholder="Enter email">
+    <span id="span"></span>
+    <br><br>
+    <input type="button" value="Check Email" onclick="checkEmail()">
+</body>
+</html>

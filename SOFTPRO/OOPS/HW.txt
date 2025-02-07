@@ -1,0 +1,4 @@
+1. class
+2. object
+3. Constructor
+4. 

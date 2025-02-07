@@ -1,0 +1,62 @@
+decision making :
+a concept to deal with conditions
+
+1)if
+2) if-else 
+3)if else ladder (if....else if ...)
+4) switch
+
+if control is useed when we want to put only one condition.if the condition uder if statement is true the code under if condition will be executed
+syntax:
+if(condition){
+statement
+}
+
+
+
+
+
+if-else :
+
+used when we put two conditions .if the condition under if control is true then code under if will be executed .and if the condition is false .code under else block will be executed 
+syntax;
+
+if(condition){
+
+statement
+
+}else{
+
+statement
+
+}
+
+
+
+3)if-else ladder:
+
+this is used when we want to deal with more than  2 conditions .it is same as if-else with multiple statements
+syntax:
+if(condition 1){
+statement 1
+}
+else if (condition2 ){
+statement 2
+}
+
+else if (condition 3 ){
+statement 3
+}
+
+else if (condition 4 ){
+statement 4
+}
+else{
+last statement
+}
+
+
+SWITCH:
+
+
+

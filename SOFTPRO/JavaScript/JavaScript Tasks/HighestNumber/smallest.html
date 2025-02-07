@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Smallest Number Finder</title>
+</head>
+<body>
+
+    <p id="para"></p>
+
+    <script>
+        let smallNumbers=[];
+
+        for(let i=0; i<=4;i++){
+            let userInput = prompt(`Enter Number ${i+1}`);
+            smallNumbers.push(Number(userInput));
+        }
+
+        let smallestNumber = Math.min(...smallNumbers);
+
+        document.getElementById("para").innerHTML=`The smallest Number is  ${smallestNumber}`;
+        document.getElementById("para").style.fontFamily="italic";
+        document.getElementById("para").style.color="green";
+        document.getElementById("para").style.fontSize="50px";
+
+    </script>
+    
+</body>
+</html>

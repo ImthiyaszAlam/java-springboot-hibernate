@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Highest Numbeer Finder</title>
+</head>
+<body>
+
+    <script>
+        const numbers=[];
+
+
+        for(let i=0; i<=4; i++){
+            let userInput  = prompt(`Enter Number ${i+1} `)
+            numbers.push(Number(userInput))
+        }
+
+        let highestNumber = Math.max(...numbers);
+        alert(`The highest Number is ${highestNumber}`)
+    </script>
+    
+</body>
+</html>

@@ -1,0 +1,38 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.paddingx{
+    width: 100%;
+    padding: 3% 8%;
+}
+
+/* About us */
+
+.paddingxAxis{
+    width: 100%;
+    padding-left: 10%;
+    padding-right: 10%;
+}
+
+.marginxAxis{
+    width: 100%;
+    margin-left: 10%;
+    margin-right: 10%;
+}
+
+
+/* Footer */
+
+.footerSection li{
+margin-bottom: 10px;
+}
+.footerSection li a{
+    text-decoration: none;
+    color: black;
+    font-size: 13px;
+}
+
+

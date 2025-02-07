@@ -1,0 +1,21 @@
+create table sales
+
+(
+id int PRIMARY KEY AUTO_INCREMENT,
+    categoryid int,
+    productname varchar(50),
+    amount decimal (10,2)
+);
+
+INSERT INTO sales
+VALUES(1, 101, '5-star', 250),(2, 102, 'Dairy milk', 300),(3, 103, 'Colgate', 400),(4, 104, 'Head & shoulders', 350),(5, 105, 'Clinic plus', 500),(6, 106, 'Temptation', 600);
+
+
+
+create TABLE stock
+(
+id int PRIMARY KEY AUTO_INCREMENT,
+    categoryname int,
+    productname varchar(50),
+    amount decimal (10,2)
+);

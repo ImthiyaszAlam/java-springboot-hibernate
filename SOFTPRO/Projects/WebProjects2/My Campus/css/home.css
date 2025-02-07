@@ -1,0 +1,576 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.SectionHeading{
+    font-size: 50px;
+    text-align: center;
+    font-weight: bold;
+}
+
+
+
+
+
+/* Home */
+.xPaddingX{
+    width: 100%;
+    padding-left: 4%;
+    padding-right: 4%;
+}
+
+
+.yPaddingY{
+    width: 100%;
+    padding-top: 3%;
+    padding-bottom: 3%;
+}
+
+.potentioaSection{
+    background-color: #0d1935;
+    color: white;
+}
+
+.potentioaSection{
+    position: relative;
+}
+
+.potentialImage::before{
+    content: "";
+    height: 180px;
+    width: 180px;
+    position: absolute;
+    top: -200px;
+    left: -80px;
+    background-color: white;
+    border-radius: 50%;
+    z-index: -1;
+}
+
+.comprehensiveSection{
+    background-color: #0d1935;
+    color: white;
+
+}
+
+
+/* Navslider */
+
+.navSliderSectionLast .thirdImage{
+    height: 500px;
+    background-color: yellow;
+    width: 400px;
+    clip-path: polygon(0% 100%, 100% 100%, 100% 0%);
+
+
+
+}
+
+.navSliderSectionLast .secondImage{
+    height: 200px;
+    background-color: blue;
+    clip-path: polygon(80% 80%, 80% 100%, 100% 50%);
+}
+
+.navSliderSection{
+    position: relative;
+}
+
+
+
+
+
+/* Navbar */
+.mainNavRow{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 60px;
+}
+.mainNavBar{
+}
+.aboutDrop{
+    display: none;
+    position: absolute;
+    top: 120px;
+    width: auto;
+    height: auto;
+    padding-left: 15px;
+    padding-right: 30px;
+    color: white;
+    background-color: #0d1935;
+    z-index: 1;
+}
+
+.aboutDrop a {
+    color: white;
+}
+.mainNavBar .about:hover .aboutDrop{
+    display: block;
+    color: white;
+
+}
+
+.collegeCoursesDetails{
+
+}
+.collegeCoursesDetails .college{
+    font-size: 20px;
+    font-weight: bold;
+}
+.collegeCoursesDetails .collegeSubHead{
+    font-size: 20px;
+}
+.collegeCoursesDetails li a{
+    font-size: 15px;
+}
+
+
+/* Community Scholar */
+
+
+.communityContainer{
+position: relative;
+z-index: 2;
+}
+
+.communityContent .slNo p{
+    font-size: 50px;
+
+}
+
+.communityContent .slNo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.communityContent:hover{
+    transform: translateX(-5%);
+    transition: all 0.4s ease-in-out;
+}
+.communityRightSection{
+    position: relative;
+}
+.communityContentRow{
+    position: relative;
+}
+
+.communityBg{
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 80%;
+    height: 100%;
+    background-color: #0d1935;
+}
+
+.communityLeftContainer{
+    position: relative;
+}
+
+.communityLeftBg{
+    position: absolute;
+    height: 23rem;
+    width: 29rem;
+    left: 5%;
+    top: 30rem;
+    z-index: -1;
+    background-color: yellow;
+
+}
+
+
+
+.communityImage{
+    position: absolute;
+    z-index: 1;
+}
+
+/* Topabr */
+
+.topbarSection .firstColumn a {
+    text-decoration: none;
+    font-size: 15px;
+    color: blue;
+}
+.topbarSection .firstColumn i{
+    color: blue;
+}
+.topbarSection .firstColumn span{
+    color: blue;
+}
+
+.studentLoginBtn{
+    background-color:#0d1935 ;
+}
+
+.navbarSection a {
+    font-size: 13px;
+    font-weight: bold;
+    height: 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* Courses */
+
+
+
+.mainNavBar li:hover{
+    background-color: yellow;
+}
+
+
+
+/* Legacy  */
+
+
+/* Comprehensive */
+
+.imgPrograms {
+    position: relative;
+    display: flex;
+    flex-direction: column; 
+    justify-content: flex-end;
+    text-align: center;
+}
+
+.imgProgramsText {
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 30rem;
+    width: 24rem;
+
+
+}
+.imgPrograms:hover .headText {
+    opacity: 0;
+}
+
+.imgPrograms:hover .imgProgramsText {
+    display: block;
+    opacity: 1;
+    background-color: rgb(35, 35, 9);
+    height: 32rem;
+    width: 26rem; 
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+    padding-left: 40px;
+    
+}
+
+
+.headText{
+    background: rgba(0, 0, 0, 0.5);
+    color: white;
+}
+
+
+/* Tech latest */
+
+.horizontalLine{
+    width: 100%;
+    padding-left: 20%;
+    padding-right: 20%;
+    height: 2px;
+    background-color: yellow;
+}
+
+/* Campus life */
+
+.imageInfoCollege{
+
+}
+.imageInfoJITCampus{
+    opacity: 0;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.imageInfoCollege:hover .imageInfoJITCampus{
+    opacity: 1;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: yellow;
+}
+
+
+/* Footer */
+
+.footerSection{
+    color:white;
+    background-color: #0d1935;
+}
+
+.footerSection a {
+    text-decoration: none;
+    color: white;
+}
+.socialIcon{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: yellow;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 5px;
+    font-size: 20px;
+}
+.socialIcon i{
+    color: blue;
+}
+
+
+
+
+
+/* Carousel */
+
+.prevButton{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+
+
+/* Potential */
+
+.potentialImage::after{
+    content: '';
+    height: 180px;
+    width: 180px;
+    position: absolute;
+    top: -70px;
+    left: -80px;
+    border-radius: 50%;
+    background: #7d195c;
+    z-index: -1;
+}
+
+
+/* Admission */
+
+/* Engineering */
+
+.degreeSection{
+    background-color:#0d1935 ;
+}
+
+.degreeSection .degreeOfferImage:hover{
+    background-color: yellow;
+    padding: 5px;
+    cursor: pointer;
+}
+
+.headingText{
+    color: #0d1935;
+}
+
+.achievementSection{
+    background-color: rgb(91, 91, 5);
+}
+
+
+
+
+/* Courses */
+
+.courseHeading{
+    background-color: #0d1935;
+    color: white;
+}
+
+.counsellingButton{
+    background-color: #0d1935;
+}
+
+.careerProspectiveSection{
+    background-color: #0d1935;
+}
+
+
+.getStartedSection{
+    background-color: #0d1935;
+    color: yellow;
+}
+
+
+.placementSection{
+    background-color: #0d1935;
+}
+.bigHeading{
+    font-size: 100px;
+    font-weight: bold;
+    
+}
+
+.sidebar:nth-child(1){
+    background-color: #0d1935;
+}
+
+
+
+.sidebar{
+    cursor: pointer;
+}
+
+.sidebar:hover a{
+    background-color: #0d1935;
+    color: white;
+}
+
+.placementSection::after{
+    position: relative;
+}
+
+.subHeadingText::after{
+    content: "";
+    background-color: #0d1935;
+    position: absolute;
+    height: 100px;
+    width: 400px;
+    top: 70px;
+    left: -4%;
+}
+
+.subHeadingText{
+    color: yellow;
+    position: absolute;
+    top: 240px;
+    
+}
+
+
+
+.aboutUsbigHeading{
+    font-size: 100px;
+    font-weight: bold;
+}
+
+.aboutSubHeding{
+    color: yellow;
+    position: absolute;
+    top: 210px;
+}
+
+.historyBigHeading{
+    font-size: 100px;
+    font-weight: bold;
+}
+
+.historySubHeading{
+    color: yellow;
+    position: absolute;
+    top: 90px;
+}
+
+.historySection{
+    position: relative;
+    background-color: #0d1935;
+}
+
+.historySubHeading::after{
+    content: "";
+    background-color: #0d1935;
+    position: absolute;
+    height: 150px;
+    width: 400px;
+    top: 180px;
+    left:-4% ;
+}
+
+
+.verticalLine{
+    height: 20rem;
+    border: 1px solid rgb(217, 206, 206);
+}
+
+     /* Alumni slider start */
+
+
+.alumni{
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    font-size: 20px;
+    line-height: 2;
+}
+
+.alumniImage{
+    position: absolute;
+    top: 10px;
+    left: 10px;
+
+}
+
+.bgYellow{
+    height: 15rem;
+    width: 12rem;
+    background-color: yellow;
+}
+
+.alumniImage img{
+    position: absolute;
+    top: -30px;
+    left: 20px;
+    height: 15rem;
+    width: 12rem;
+}
+.feedback{
+    height: auto;
+    border: 1px solid ;
+    margin-left: 50px;
+
+}
+
+.feedback p{
+    margin-left: 200px;
+}
+
+.feedbackContainer{
+    position: relative;
+}
+
+.profileFeedback{
+    position: absolute;
+    top: -5%;
+}
+/* Alumni slider end */
+
+
+/* Unleash Potential */
+
+.unleashPotentialBg{
+    position: relative;
+}
+
+.potentialImage img{
+    position: relative;
+}
+
+
+.yellowBgUnleash{
+position: absolute;
+height: 15rem;
+width: 15rem;
+top: -5%;
+left: -2%;
+background-color: yellow;
+}
+
+
+
+

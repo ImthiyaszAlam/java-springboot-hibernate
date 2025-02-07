@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pattern</title>
+
+    <script>
+        function checkPattern() {
+            var pmobile = /^[0-9]{3,10}$/; 
+
+            var spanElement=document.getElementById("span").value;
+            var name = document.getElementById("mobNo").value;
+
+            if (!pmobile.test(name)) {
+                document.getElementById("span").innerHTML="<b>Number InValidated</b> "
+                document.getElementById("span").style.color="red";
+                document.getElementById("mobNo").style.border="2px solid red";
+            } else {
+                document.getElementById("span").innerHTML="<b>Number Validated</b> "
+                document.getElementById("span").style.color="green";
+                document.getElementById("mobNo").style.border="2px solid green";
+            }
+        }
+    </script>
+</head>
+<body>
+    <h1>Check Pattern</h1> <br><br>
+    <input type="number" name="" id="mobNo">
+    <span id="span"></span>
+    <br><br>
+    <input type="button" value="checkPattern" onclick="checkPattern()">
+</body>
+</html>

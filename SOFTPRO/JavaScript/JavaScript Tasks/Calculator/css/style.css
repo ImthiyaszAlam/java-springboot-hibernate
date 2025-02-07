@@ -1,0 +1,51 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.mainContainer{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.topInputDisplay{
+    width: 50%;
+    margin-top: 100px;
+}
+
+.topInputDisplay input{
+    width: 100%;
+    height: 100px;
+    text-align: right;
+    font-size: 40px;
+    cursor: pointer;
+}
+
+.buttons{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.firstLine{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.firstLine button{
+    width: 25%;
+    height: 50px;
+    cursor: pointer;
+    font-size: 30px;
+    font-style: bold;
+}
+
+.operator{
+    color: green;
+}

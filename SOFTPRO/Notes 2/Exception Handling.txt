@@ -1,0 +1,66 @@
+Exception Handling:
+
+Abnormal termination
+The dictionary meaning of exception is abnormal termination
+when exception is occured program is terminated abnormally and rest of code is not executed 
+In java there are 3 types of exceptions 
+
+1.Checked exception: which are identified by compiler at copilation time
+eg:a. ClassNotFoundException 
+b.FileNotFoundException
+c.IOException
+d.SQLException
+
+
+2.UnChecked exception: which are identified at run time 
+ArithematicException
+NullPointerException
+InputMismatchException
+ArrayIndexOutOfBoundException
+
+
+3.Error : a type of unchecked exception. it occurs due to lack of system resources
+
+a. IOError
+b. AWTError
+c. 
+
+
+Exception Handling: A process to handle exception to achieve normal execution of code.For exception handling we use 
+try,
+catch,
+finally,
+throw and 
+throws keyword
+
+Exception can be handled in two ways.
+
+1.by using try catch blocks
+2. by using throws keywords
+
+1 syntax:
+try{
+// code you want to protect ,likely to occur error in code 
+}catch(ExceptionType variable ){
+//code to handle exception
+}
+finally{
+// code which you want to execute always
+};
+
+
+
+
+
+
+
+BufferedReader:to take input:
+
+synatx:
+BufferedReader bf = new BufferedReader(new InputStreamReader(System.in));
+String name  = bf.readLine();
+int num = Integer.parseInt(bf.readLine());
+float f = Float.parseFloat(bf.readLine());
+double d = Double.parseDouble(bf.readLine());
+
+Note:   if you use BufferedReader class to take input cause IOException.you have to handle IOExceptionh

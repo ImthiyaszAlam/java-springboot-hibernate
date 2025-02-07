@@ -1,0 +1,4 @@
+ASCII:aAmerican std code for info interchange
+ 
+65 - 90 capital letters
+97-122 small letters 

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Slider</title>
+    <style>
+        #slider {
+            height: 300px;
+            width: 600px;
+            background-size: cover;
+            background-position: center;
+            border: 1px solid;
+        }
+    </style>
+</head>
+<body>
+    <div id="slider"></div>
+
+    <script>
+        var img = ["images/shadi1.png", "images/shadi2.png", "images/shadi3.png", "images/shadi4.png"];
+        var i = 0;
+        var divElement = document.getElementById("slider");
+        divElement.style.backgroundImage = "url('images/shadi1.png')";
+
+        function sliderRun() {
+            divElement.style.backgroundImage = "url('"+images/ img[i] +"')";
+            i = (i + 1) % img.length;
+            setTimeout(sliderRun, 3000); // Change image every 3 seconds (3000 milliseconds)
+        }
+
+        window.onload = sliderRun;
+    </script>
+</body>
+</html>

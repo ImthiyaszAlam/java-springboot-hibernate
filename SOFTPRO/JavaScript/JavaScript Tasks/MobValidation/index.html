@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Indian Mobile Number Validation</title>
+
+    <style>
+    </style>
+</head>
+<body>
+    <label for="mobileNumber">Enter Indian Mobile Number:</label> <br><br>
+    <input type="text" id="mobileNumber" onkeyup="validateMobileNumber(this.value)" placeholder="Enter 10-digit number">
+
+    <p id="validationResult"></p>
+
+    <script>
+        function validateMobileNumber(number) {
+            const mobileNumberPattern = /^[6-9]\d{9}$/; 
+            
+            const validationResult = document.getElementById('validationResult');
+
+            if (mobileNumberPattern.test(number)) {
+                validationResult.innerHTML = 'Valid Indian mobile number';
+                validationResult.style.color="green"
+                document.getElementById("mobileNumber").style.border="2px solid green";
+
+            } else {
+                validationResult.innerHTML = 'Invalid Indian mobile number';
+                document.getElementById("mobileNumber").style.border="2px solid red"
+                validationResult.style.color="red"
+            }
+        }
+    </script>
+</body>
+</html>
+

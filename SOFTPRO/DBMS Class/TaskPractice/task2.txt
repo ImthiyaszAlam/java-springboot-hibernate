@@ -1,0 +1,28 @@
+create TABLE customer
+
+(cust_id int PRIMARY KEY AUTO_INCREMENT,
+name varchar(50),
+ address varchar(500)
+
+);
+
+
+
+ALTER TABLE customer ADD COLUMN connect_date date 
+ALTER TABLE customer DROP COLUMN connect_date;
+ALTER TABLE customer MODIFY COLUMN cust_id int PRIMARY KEY;
+ALTER TABLE customer ADD COLUMN connect_date date AFTER name
+
+
+
+
+CREATE TABLE orders (
+    pid INT PRIMARY KEY AUTO_INCREMENT,
+    pname VARCHAR(50),
+    cust_id INT,
+    FOREIGN KEY (cust_id) REFERENCES customer(cust_id)
+);
+
+
+
+

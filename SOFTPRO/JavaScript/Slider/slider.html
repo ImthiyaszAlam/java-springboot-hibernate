@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Slider</title>
+    <style>
+        #slider {
+            height: 300px;
+            width: 600px;
+            /* border: 1px solid;
+            background-size: cover;
+            background-position: center; */
+        }
+    </style>
+    <script>
+        var img = ["images/shadi1.png", "images/shadi2.png", "images/shadi3.png", "images/shadi4.png"];
+        var i = 0;
+
+        function loadSlider() {
+            var divElement = document.getElementById("slider");
+            divElement.style.backgroundImage = "url('" + img[i] + "')";
+
+            i = (i + 1) % img.length;
+            setTimeout(loadSlider, 2000);
+        }
+
+        window.onload = loadSlider; 
+    </script>
+</head>
+<body>
+    <div id="slider"></div>
+</body>
+</html>
+
+

@@ -1,0 +1,8 @@
+29 feb -2024
+
+WAP to calculate simple interest
+2. area and perimeter of a rectangle
+3. area and perimeters of a square
+4. area and cicumference of a circle
+5. enter two numbers from user and perform addition,sub,multiplication,diviison and modulus in 1 program;
+6. take input second and convert to minute and seconds 

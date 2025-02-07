@@ -1,0 +1,7 @@
+Q1.Ways to store data?
+Q2:Types of databases
+Q3:DBMS & RDBMS Difference
+
+Q4.Rename table and column name
+Q5:Self Join
+Q6. Super key

@@ -1,0 +1,21 @@
+/* Styles for the slider */
+.slider {
+    overflow: hidden;
+    width: 300px; /* Adjust width as needed */
+}
+
+.slides {
+    display: flex;
+    width: 300%; /* Set width to accommodate all slides */
+}
+
+.slide {
+    flex: 0 0 100%; /* Equal width for each slide */
+    overflow: hidden;
+}
+
+img {
+    width: 100%;
+    height: auto;
+    pointer-events: none; /* Disable pointer events on images */
+}

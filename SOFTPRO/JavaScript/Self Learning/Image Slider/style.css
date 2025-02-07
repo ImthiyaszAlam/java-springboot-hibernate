@@ -1,0 +1,35 @@
+/* Styles for the slider */
+.slider {
+    position: relative;
+    max-width: 100%;
+    overflow: hidden;
+}
+
+.slider > div {
+    display: flex;
+}
+
+img {
+    width: 100px; /* Adjust the width as needed */
+    height: auto;
+    margin: 5px;
+}
+
+.continuous {
+    animation: continuousSlide 10s linear infinite;
+}
+
+@keyframes continuousSlide {
+    0%, 100% { transform: translateX(0); }
+    50% { transform: translateX(-500px); } /* Adjust the distance based on image width and number */
+}
+
+.moving {
+    animation: movingSlide 10s linear infinite;
+}
+
+@keyframes movingSlide {
+    0%, 100% { transform: translateX(0); }
+    50% { transform: translateX(500px); } /* Adjust the distance based on image width and number */
+}
+

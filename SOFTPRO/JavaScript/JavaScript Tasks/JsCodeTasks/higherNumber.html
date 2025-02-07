@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Higher Number</title>
+
+    <script>
+            function higherNumber() {
+                var num1 = prompt("Enter First Number");
+                var num2 = prompt("Enter Second Number");
+                var higherNumber;
+
+
+                if (!isNaN(num1) && !isNaN(num2)) {
+                    if (num1 > num2) {
+                        higherNumber = num1;
+                    }
+                    else if (num2 > num1) {
+                        higherNumber = num2;
+                    }
+                    else{
+                        higherNumber = "Both numbers are equal"
+                    }
+                
+                    alert("the higher number is " +higherNumber);
+                }else{
+
+                }
+                alert("Enter a valid number");
+
+
+            }
+
+
+    </script>
+</head>
+<body>
+    <input type="button" value="Check Higher Number" onclick="higherNumber()">
+    
+</body>
+</html>

@@ -1,0 +1,19 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.mainContainer{
+    display: table;
+    margin: auto;
+}
+
+
+.light{
+    height: 70px;
+    width: 70px;
+    margin: 7px;
+    border-radius: 50%;
+    background: black;
+}

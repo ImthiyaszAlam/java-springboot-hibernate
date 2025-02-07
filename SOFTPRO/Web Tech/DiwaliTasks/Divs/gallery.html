@@ -1,0 +1,628 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://kit.fontawesome.com/68bda705f2.js" crossorigin="anonymous"></script>
+
+    <style>
+
+        body{
+            background-color: gray;
+            align-items: center;
+            justify-content: center;
+            display: flex;
+            margin-top: 100px;
+        }
+
+        .img1{
+            height: 175px;
+            width: 175px;
+        }
+
+
+        .img2{
+            height: 300px;
+            width: 300px; 
+        }
+        .mainContainer{
+            height: 2100px;
+            width: 2100px;
+            /* background-color: #252525; */
+        }
+
+        .parentDivs{
+            display: flex;
+            justify-content: space-between;
+        }
+
+
+
+        /* Div1 */
+
+        .div1{
+            height: 2100px;
+            width: 1000px;
+            display: flex;
+            justify-content: space-between;
+            flex-direction: column;
+        }
+
+
+
+        /* First Box */
+
+        .div1One{
+            height: 800px;
+            width: 1000px;
+            background-color: white;
+        }
+
+        .div1OneTop{
+            height: 20%;
+            align-items: center;
+            margin-right: 10px;
+            justify-content:flex-end;
+            display: flex;
+
+        }
+
+        .div1OneBottom{
+            height: 80%;
+        }
+
+        
+
+        .div1OneBottomLeft{
+            width: 50%;
+        }
+
+        .div1OneBottomLeft h2,p{
+            margin-left: 15px;
+        }
+        .div1OneBottomRight{
+            width: 50%;
+        }
+
+        .div1OneTopButton{
+            height: 50px;
+            display: flex;
+            width: 20%;
+            color: white;
+            margin-top: 5px;
+            justify-content: center;
+            align-items: center;
+            border: 1px solid blue;
+            border-radius: 5px;
+            background-color: blue;
+            padding: 2px;
+        }
+
+
+        /* Second Box */
+
+        .div1Two{
+            height: 1250px;
+            width: 1000px;
+            color: white;
+            display: flex;
+            justify-content: space-between;
+        }
+
+
+        .div1TwoLeft{
+            width: 475px;
+            height: 1250px;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+        }
+
+        .div1TwoLeftSmall{
+            width: 475px;
+            height: 500px;
+            background-color:#ce483d;
+        }
+
+        .div1TwoLeftSmallImage{
+            height: 55%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+
+        .div1TwoLeftSmallInfo{
+            height: 42%;
+            background-color:#520c06 ;
+        }
+
+        .div1TwoLeftSmallInfo h3{
+            margin-left: 15px;
+            margin-right: 15px;
+            padding-top: 15px;
+        }
+
+        .div1TwoLeftSmallInfo p{
+            margin-left: 15px;
+            margin-right: 15px;
+        }
+
+        .div1TwoLeftLarge{
+            width: 475px;
+            height: 700px;
+            background-color: #8eb021;
+        }
+
+        .div1TwoLeftLargeImage{
+            height: 68%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .div1TwoLeftLargeInfo{
+            height: 30%;
+            background-color: #5e790d;
+        }
+
+        .div1TwoLeftLargeInfo h3{
+            margin-left: 15px;
+            margin-right: 15px;
+            padding-top: 15px;
+        }
+
+        .div1TwoLeftLargeInfo p{
+            margin-left: 15px;
+            margin-right: 15px;
+        }
+
+
+
+
+
+
+        .div1TwoRight{
+            width: 475px;
+            height: 1250px;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+        }
+
+        .div1TwoRightLarge{
+            width: 475px;
+            height: 700px;
+            background-color:#79302a;
+        }
+
+        .div1TwoRightLargeImage{
+            height: 68%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .div1TwoRightLargeInfo{
+            height: 30%;
+            background-color: #7d1b12;
+        }
+
+        .div1TwoRightLargeInfo h3{
+            margin-left: 15px;
+            margin-right: 15px;
+            padding-top: 15px;
+        }
+
+        .div1TwoRightLargeInfo p{
+            margin-left: 15px;
+            margin-right: 15px;
+        }
+
+
+
+        .div1TwoRightSmall{
+            width: 475px;
+            height: 500px;
+            background-color:#ffd006;
+        }
+
+        .div1TwoRightSmallImage{
+            height: 55%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+
+        .div1TwoRightSmallInfo{
+            height: 42%;
+            background-color:#8b740c ;
+        }
+
+        .div1TwoRightSmallInfo h3{
+            margin-left: 15px;
+            margin-right: 15px;
+            padding-top: 15px;
+        }
+
+        .div1TwoRightSmallInfo p{
+            margin-left: 15px;
+            margin-right: 15px;
+        }
+
+
+
+        /* Div2 */
+
+        .div2{
+            height: 2100px;
+            width: 500px;
+            display: flex;
+            color: white;
+            flex-direction: column;
+            justify-content: space-between;
+        }
+
+        .div2First{
+            height: 600px;
+            width: 500px;
+            background-color:#abcbd6;
+        }
+
+        .div2FirstImage{
+            height: 65%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .div2FirstInfo{
+            height: 32%;
+            background-color:#216379;
+        }
+
+        .div2FirstInfo h3{
+            margin-left: 15px;
+            margin-right: 15px;
+            padding-top: 15px;
+        }
+
+        .div2FirstInfo p{
+            margin-left: 15px;
+            margin-right: 15px;
+        }
+
+
+
+        .div2Second{
+            height: 600px;
+            width: 500px;
+            background-color:#7bc1a1; 
+        }
+
+        .div2SecondImage{
+            height: 65%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .div2SecondInfo{
+            height: 32%;
+            background-color:#216379;
+        }
+
+        .div2SecondInfo h3{
+            margin-left: 15px;
+            margin-right: 15px;
+            padding-top: 15px;
+        }
+
+        .div2SecondInfo p{
+            margin-left: 15px;
+            margin-right: 15px;
+        }
+
+
+
+
+        .div2Third{
+            height: 800px;
+            width: 500px;
+            background-color: #101e55;
+        }
+
+        .div2ThirdImage{
+            height: 72%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .div2ThirdInfo{
+            height: 26%;
+            background-color:#030c30;
+        }
+
+        .div2ThirdInfo h3{
+            margin-left: 15px;
+            margin-right: 15px;
+            padding-top: 15px;
+        }
+
+        .div2ThirdInfo p{
+            margin-left: 15px;
+            margin-right: 15px;
+        }
+
+
+
+
+        /* Div3 */
+
+        .div3{
+            height: 2100px;
+            width: 500px;
+            display: flex;
+            color: white;
+            flex-direction: column;
+            justify-content: space-between;
+
+        }
+
+        .div3First{
+            height: 800px;
+            width: 500px;
+            background-color: #fbbf28;
+        }
+
+        .div3FirstImage{
+            height: 72%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .div3FirstInfo{
+            height: 26%;
+            background-color:#a0760c;
+        }
+
+        .div3FirstInfo h3{
+            margin-left: 15px;
+            margin-right: 15px;
+            padding-top: 15px;
+        }
+
+        .div3FirstInfo p{
+            margin-left: 15px;
+            margin-right: 15px;
+        }
+
+
+
+
+
+
+        .div3Second{
+            height: 600px;
+            width: 500px;
+            background-color:#2a70e8; 
+        }
+
+
+        .div3SecondImage{
+            height: 65%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .div3SecondInfo{
+            height: 32%;
+            background-color:#133a7d;
+        }
+
+        .div3SecondInfo h3{
+            margin-left: 15px;
+            margin-right: 15px;
+            padding-top: 15px;
+        }
+
+        .div3SecondInfo p{
+            margin-left: 15px;
+            margin-right: 15px;
+        }
+
+
+
+        .div3Third{
+            height: 600px;
+            width: 500px;
+            background-color:#2b2423; 
+        }
+
+
+        
+        .div3ThirdImage{
+            height: 65%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .div3ThirdInfo{
+            height: 32%;
+            background-color:#201917;
+        }
+
+        .div3ThirdInfo h3{
+            margin-left: 15px;
+            margin-right: 15px;
+            padding-top: 15px;
+        }
+
+        .div3ThirdInfo p{
+            margin-left: 15px;
+            margin-right: 15px;
+        }
+
+
+
+    </style>
+</head>
+
+
+<body>
+
+    <section class="mainContainer">
+        <div class="parentDivs">
+
+            <div class="div1">
+                <div class="div1One">
+                    <div class="div1OneTop">
+                        <div class="div1OneTopButton">
+                            <h3>Upgrade to Google</h3>
+                        </div>
+                    </div>
+
+                    <div class="div1OneBottom">
+                        <div class="div1OneBottomLeft">
+                            <h2>Lorem ipsum dolor sit amet consectetur adipisicing elit.</h2>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam illo illum unde sapiente mollitia molestias! Quis, sequi nemo perferendis modi sint tempora. Numquam voluptates asperiores perferendis nemo, corrupti earum quia?
+                            Exercitationem placeat, nihil corporis inventore dolor velit reiciendis molestiae voluptas cumque unde neque necessitatibus doloremque tenetur odio porro eum officiis ad adipisci ipsa culpa laudantium! Veritatis ad impedit sit vel.</p>
+                        </div>
+
+                        <div class="div1OneBottomRight">
+                            <img src="" alt="">
+                        </div>
+                    </div>
+                </div>
+                <div class="div1Two">
+                    <div class="div1TwoLeft">
+                        <div class="div1TwoLeftSmall">
+
+                            <div class="div1TwoLeftSmallImage">
+                                <img src="images/blogger.png" class="img1">
+                            </div>
+                            <div class="div1TwoLeftSmallInfo">
+                                <h3>Blogger <i class="fa-solid fa-angles-right fa-2xs" style="color: #fff;"></i> </h3>
+                                <p>Easily share your posts on Google+ so that you can expand the audience for your blog</p>
+                            </div>
+
+                        </div>
+
+                        <div class="div1TwoLeftLarge">
+
+                            <div class="div1TwoLeftLargeImage">
+                                <img src="images/android.png" class="img2">
+                            </div>
+                            <div class="div1TwoLeftLargeInfo">
+                                <h3>Android <i class="fa-solid fa-angles-right fa-2xs" style="color: #fff;"></i> </h3>
+                                <p>Easily share your posts on Google+ so that you can expand the audience for your blog</p>
+                            </div>
+                            
+                        </div>
+
+                    </div>
+                    <div class="div1TwoRight">
+                        <div class="div1TwoRightLarge">
+                            <div class="div1TwoRightLargeImage">
+                                <img src="images/chrome.png" class="img2">
+                            </div>
+                            <div class="div1TwoRightLargeInfo">
+                                <h3>Android <i class="fa-solid fa-angles-right fa-2xs" style="color: #fff;"></i> </h3>
+                                <p>Easily share your posts on Google+ so that you can expand the audience for your blog</p>
+                            </div>
+                        </div>
+
+                        <div class="div1TwoRightSmall">
+                            <div class="div1TwoRightSmallImage">
+                                <img src="images/music.png" class="img1">
+                            </div>
+                            <div class="div1TwoRightSmallInfo">
+                                <h3>Blogger <i class="fa-solid fa-angles-right fa-2xs" style="color: #fff;"></i> </h3>
+                                <p>Easily share your posts on Google+ so that you can expand the audience for your blog</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="div2">
+                <div class="div2First">
+                    <div class="div2FirstImage">
+                        <img src="images/email.png" class="img1">
+                    </div>
+                    <div class="div2FirstInfo">
+                        <h3>Blogger <i class="fa-solid fa-angles-right fa-2xs" style="color: #fff;"></i> </h3>
+                        <p>Easily share your posts on Google+ so that you can expand the audience for your blog</p>
+                    </div>
+                </div>
+
+                <div class="div2Second">
+                    <div class="div2SecondImage">
+                        <img src="images/news.png" class="img1">
+                    </div>
+                    <div class="div2SecondInfo">
+                        <h3>Blogger <i class="fa-solid fa-angles-right fa-2xs" style="color: #fff;"></i> </h3>
+                        <p>Easily share your posts on Google+ so that you can expand the audience for your blog</p>
+                    </div>
+                </div>
+   
+
+                <div class="div2Third">
+                    <div class="div2ThirdImage">
+                        <img src="images/earth.png" class="img2">
+                    </div>
+                    <div class="div2ThirdInfo">
+                        <h3>Android <i class="fa-solid fa-angles-right fa-2xs" style="color: #fff;"></i> </h3>
+                        <p>Easily share your posts on Google+ so that you can expand the audience for your blog</p>
+                    </div>
+                </div>
+            </div>
+   
+
+            <div class="div3">
+                <div class="div3First">
+                    <div class="div3FirstImage">
+                        <img src="images/location (2).png" class="img2">
+                    </div>
+                    <div class="div3FirstInfo">
+                        <h3>Blogger <i class="fa-solid fa-angles-right fa-2xs" style="color: #fff;"></i> </h3>
+                        <p>Easily share your posts on Google+ so that you can expand the audience for your blog</p>
+                    </div>
+                </div>
+
+
+                <div class="div3Second">
+                                        <div class="div3SecondImage">
+                        <img src="images/earch.png" class="img1">
+                    </div>
+                    <div class="div3SecondInfo">
+                        <h3>Blogger <i class="fa-solid fa-angles-right fa-2xs" style="color: #fff;"></i> </h3>
+                        <p>Easily share your posts on Google+ so that you can expand the audience for your blog</p>
+                    </div>
+                </div>
+
+
+                <div class="div3Third">
+                                       <div class="div3ThirdImage">
+                        <img src="images/youtube.png" class="img1">
+                    </div>
+                    <div class="div3ThirdInfo">
+                        <h3>Blogger <i class="fa-solid fa-angles-right fa-2xs" style="color: #fff;"></i> </h3>
+                        <p>Easily share your posts on Google+ so that you can expand the audience for your blog</p>
+                    </div> 
+                </div>
+            </div>
+        </div>
+
+
+        </div>
+    </section>
+    
+</body>
+</html>

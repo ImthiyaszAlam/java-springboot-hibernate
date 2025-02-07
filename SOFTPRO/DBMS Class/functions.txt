@@ -1,0 +1,79 @@
+FUNCTIONS
+
+set of instructions or collections of programs or code block ,used to perform specific task
+SQL FUNCTIONS :function which are predefined in the SQL library are known as SQL functions
+
+count():to count number of records in a table;
+select  count(*) "Statement" from <tablename>
+
+sum(): to calculate sum of a particular column  (summation)
+
+select sum(<columnname>) "total salary is" from <tablename>
+
+avg():to calculate average value of given column;
+
+select avg(<colname>) "average is" from <tablename>
+SELECT
+    AVG(fee) "average fee  is"
+FROM
+    student;
+
+min():to calculate minimum  value of the column
+select min(<colname>)"min is " from<tablename>
+max()
+select max(<colname>)"min is " from<tablename>
+SELECT MAX(fee) "minimum fee is" FROM student;
+
+upper() :show uppercase 
+lower():show lowercase 
+
+select lower/upper(<colname>)"min is " from<tablename>
+
+now() date time both;
+
+INSERT INTO enquiry (name, contactno, enquirytxt, enquirydate, enquirytime, datetime) 
+VALUES ('Anna', '1234567890', 'No enquiry', CURRENT_DATE, CURRENT_TIME, NOW());
+
+
+
+
+
+LIKE CLAUSE COMMAND 
+to fetch data  related to a particular alphabet/alphabets
+SELECT * FROM <TABLENAME>WHERE <COLNAME> LIKE '%irstAlphabet'
+SELECT * FROM issuebook WHERE authorname LIKE 'Y%';
+
+from end 
+SELECT * FROM <TABLENAME>WHERE <COLNAME> LIKE '%Last alphabet'
+SELECT * FROM issuebook WHERE authorname LIKE '%';
+
+in between 
+SELECT * FROM <TABLENAME>WHERE <COLNAME> LIKE '%in between alphabet%'
+SELECT * FROM issuebook WHERE authorname LIKE '%ne%';
+
+starting and ending known .in between unknown
+
+SELECT * FROM issuebook WHERE authorname LIKE 'Y% %r';
+`
+
+
+
+
+
+
+
+GROUP BY Command
+a concept in which records are grouped according a particular category 
+
+SELECT categoryid , SUM(amount) as totalamount from sales GROUP by categoryid
+
+
+Candidate key :
+to achieve multiple primary keys in the table.ie : we can't have multiple primary keys in a table but we can achieve it using candidate key.
+candidate key can be made with the keyword UNIQUE KEY
+
+VIEWS:
+
+Views are the logical (virtual) table of a particular table of a particular table  .if we change anything in the VIEW , original table will get effected
+
+create view <viewname> as select <col1.,<col2> etc from <tablename>

@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Draggable Image Slider</title>
+    <link rel="stylesheet" href="styles.css">
+
+<style>
+    /* Styles for the slider */
+.slider {
+    overflow: hidden;
+    width: 300px; /* Adjust width as needed */
+}
+
+.slides {
+    display: flex;
+    width: 300%; /* Set width to accommodate all slides */
+}
+
+.slide {
+    flex: 0 0 100%; /* Equal width for each slide */
+    overflow: hidden;
+}
+
+img {
+    width: 100%;
+    height: auto;
+    pointer-events: none; /* Disable pointer events on images */
+}
+
+</style>
+</head>
+<body>
+    <div class="slider">
+        <div class="slides">
+            <div class="slide"><img src="image1.jpg" alt="Image 1"></div>
+            <div class="slide"><img src="image2.jpg" alt="Image 2"></div>
+            <div class="slide"><img src="image3.jpg" alt="Image 3"></div>
+            <!-- Add more slides as needed -->
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,34 @@
+OOPS:Object oriented programming Language:
+Abstraction: we can achieve abstraction using interfaces .
+
+Interface store DECLARATION not implementation
+
+
+Inheritance can be implemented using keywords EXTENDS , SUPER (a keyword and sometimes acts as method)
+SYNTAX:
+
+class <child> extends class <parent>
+
+
+parent class is known as SUPER CLASS/BASE CLASS
+child class : SUB CLASS / DERIVED CLASS
+
+Method overloading  : based on number of arguments and data types in methods with same name
+Method overriding : inheritance implementation is mandatory
+
+
+
+
+
+
+INHERITANCE :
+this is a mechanism in which one class can acquire properties of other class .the class who who is acquiring the properties is known as child/sub/derived class where as the class whose properties are being acquired is known as parent/super/base class.the keyword extends is used to implement the concept of inheritance . 
+super keyword is used to call the methods or data members / instance variable  from the parent class
+
+
+
+
+POLYMORPHISM:
+a mechanism to represent a  data in multiple forms 
+1.Compile time (method overloading)
+2. Run time  (method overloading)

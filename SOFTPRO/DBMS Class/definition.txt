@@ -1,0 +1,160 @@
+
+dbms is an application software which is used to define,access and manipulate data
+SQL(Structured Query Language): A Language to perform operations in dbms
+
+
+Command ;
+CREATE:to create database object eg: database , tables
+Select:Select and show data as per requirement
+Syntax:
+select * from <tablename>
+select don't delete table
+INSERT : 
+syntax:
+insert into <tablename> values(
+
+<col1>,<col2>...........
+
+);
+
+LIMIT:
+select and show data according to limit.
+syntax 
+
+
+Constraint:Set of rules to define to queries;
+
+PRIMARY KEY;for  Unique identificaion of records.Atomic and NOT NULL
+
+Atomic:Singularity
+
+
+Tables
+row-record       //horizontal flow of data
+col-field        //vertical flow of data
+
+Keywords:   reserved words having predefined meaning
+variable : empty box of memory to store value; entities whose valuues varies dusing the execution
+data tyoe :define the nature of data stored in variable
+
+WHERE Cluase :to select data specifically;
+
+
+DELETE : to delete all records or  specific records both.
+delete from table 
+delete from <tablename>where <colname> = <colvalue>;
+
+
+TRUNCATE:to delete all data from table
+
+TRUNCATE table <tablename>;
+rollback
+Truncate don't delete specific record
+can't retrieve deleted table
+
+
+
+UPDATE: to modify records (values) in the table 
+update <tablename> set <colname> = <colval1>,<colvalue2>....... where <colname> = value;
+update student set name='Ram',branch = 'electronics' where rollno=1;
+
+CRUD Apply on records (DML)
+
+
+
+DDL 
+DROP :to delete /remove database objects
+drop database <databsename>
+CREATE to create database object like table /database 
+create database <database name>
+ALTER:to modify databse objects
+1.add a col
+2. deleting a col
+3.modify a col
+
+add a col
+ALTER TABLE <tablename> ADD  COLUMN <colname> <data type >
+ALTER TABLE <tablename> ADD  COLUMN <colname> <data type > after <tabelname>
+ALTER TABLE <tablename> ADD  COLUMN <colname> <data type > first;
+
+
+deleting a column 
+ALTER TABLE <tablename> DROP COLUMN <colname>;
+
+
+Modifying table or database 
+alter table <tablename> modify column <colname> <datatype> <constraint if any>
+
+
+AUTO INCREMENT:
+
+create table enquiry
+
+( id int primary key auto-increment,
+name varchar(20),
+contactNumber varchar(10),
+enquiryText varchar(300)
+
+)
+
+insert into <tablename> (name,.......,...)values(a,jhj,.......)
+
+
+
+ORDER BY :used to select and show data in a particular arranged order .can be ascending or descending order.default is ascending
+
+selct * from <tablename> order by <colname> desc(if descending)
+
+FOREIGN KEY:a constraint to establish relationship between tables .it will be a primary key in it's formal table and foreign key in the other table. means one col should be common in both the tables
+
+JOIN ;to select and show data of both the tables with the help of foreign key
+
+select * from <table1> join <table2> on <table1.primarykey>=<table2.foreignkey>;
+
+select * from employee JOIN emp_info on employee.empid=emp_info.empid;
+
+
+SELECT
+   employee.empid,
+    NAME,
+    address,
+    dept,
+    contactno
+FROM
+    employee
+JOIN emp_info ON employee.empid = emp_info.empid;
+
+
+Types of Join;
+Inner join :to select and show data of matching reocrds.
+select * from employee inner join emp_info on employee.empid  = emp_info.empid;
+LEFT JOIN:show records of table1 and matching records of both the tables
+RIGHT JOIN:show records of Table2 and matching records of both the tables
+
+SELECT
+    *
+FROM
+    employee
+RIGHT JOIN emp_info ON employee.empid = emp_info.empid;
+
+RENAME TABLE AND COLUMN;
+
+alter table <tablename>
+rename to <newtablename>
+
+FU
+
+alter table <tablename>
+rename <oldname> to <newname>
+
+FULL OUTER JOIN 
+LL OUTER JOIN: show all data (inner join + left join+ right join)
+
+SELECT * FROM person FULL OUTER JOIN account on 
+person.id  = account.id;
+
+SELECT * FROM person LEFT JOIN account on 
+person.id  = account.id
+UNION
+SELECT * FROM person RIGHT JOIN account on 
+person.id  = account.id;

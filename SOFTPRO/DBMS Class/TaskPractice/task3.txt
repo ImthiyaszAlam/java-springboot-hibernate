@@ -1,0 +1,28 @@
+INSERT into person VALUES
+(1001,'Dhirendra','Lucknow'),
+(1002,'Bijendra','Sitapur'),
+(1003,'Brijesh','Lknow'),
+(1004,'Rohir','Lucknow'),
+(1005,'Priya  Singh','Barabanki');
+
+
+INSERT INTO account VALUES
+(1,20000,10000,50000,1001,),
+(2,20000,10000,50000,1001,),
+(3,20000,10000,50000,1001,),
+(4,20000,10000,50000,1001,)
+;
+
+INSERT INTO account (acid , bs , hra, da) VALUES (5,1000,00000,5001);
+
+
+
+SELECT name,bs,hra,da FROM person INNER JOIN account on 
+person.id = account.id;
+
+SELECT name,bs,hra,da FROM person LEFT JOIN account on 
+person.id = account.id;
+
+
+SELECT name,bs,hra,da FROM person RIGHT JOIN account on 
+person.id = account.id;

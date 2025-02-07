@@ -1,0 +1,10 @@
+Package is the conatainer of subpackages, classes and interfaces.
+package is created by using 'package' keyword followed by package name
+
+syntax:
+package package_name;
+
+package myPackage;
+public class{
+
+}

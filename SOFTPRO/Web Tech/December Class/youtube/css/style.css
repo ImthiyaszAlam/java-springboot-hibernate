@@ -1,0 +1,116 @@
+.outerSection{
+    border: 1px solid;
+    height: 1000px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.topSection{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    height: 60px;
+}
+
+.navIcon img{
+    height: 50px;
+    width: 50px;
+}
+
+
+.youtubeIcon img{
+    height: 50px;
+    width: 100px;
+}
+.topFirst{
+    width: 33%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.topSecond{
+    width: 33%;
+}
+
+.topSecond input{
+    width: 100%;
+    height: 50px;
+    border-radius: 15px;
+    border: 1px solid;
+}
+
+.topThird{
+    width: 33%;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.topThird img{
+    width: 30px;
+}
+
+.leftSection{
+    width: 10%;
+    background-color: white;
+}
+
+.leftSection ul{
+    margin-bottom: 50px;
+    font-size: 25px;
+}
+
+.leftSection ul li{
+    margin-bottom: 10px;
+    font-size: 25px;
+}
+
+.rightSection{
+    width: 85%;
+}
+
+.leftRightSections{
+    display: flex;
+    justify-content: space-between;
+}
+
+
+.topRightSection ul{
+    display: flex;
+
+}
+
+.topRightSection ul li{
+    padding: 10px;
+    margin-right: 10px;
+    text-decoration: none;
+    list-style-type: none;
+}
+
+.videoRow1{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+
+.videoContent{
+    width: 30%;
+    height: auto;
+    margin-top: 20px;
+
+}
+
+
+.video1{
+    height:200px ;
+    width: 100%;
+    border-radius: 15px;
+    border: 1px solid;
+}
+
+.video1 img{
+width:100%;border-radius: 15px;
+height:200px;
+}

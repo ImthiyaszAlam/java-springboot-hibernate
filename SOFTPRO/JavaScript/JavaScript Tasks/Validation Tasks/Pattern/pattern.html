@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pattern</title>
+
+    <script>
+        function checkPattern() {
+            var pname = /^[a-zA-Z ]{3,10}$/; 
+
+            var spanElement=document.getElementById("span").value;
+            var name = document.getElementById("name").value;
+
+            if (!pname.test(name)) {
+                document.getElementById("span").innerHTML="Invalid Name"
+                document.getElementById("span").style.color="red";
+            } else {
+                document.getElementById("span").innerHTML=" Name Validated"
+                document.getElementById("span").style.color="green";
+            }
+        }
+    </script>
+</head>
+<body>
+    <h1>Check Pattern</h1> <br><br>
+    <input type="text" name="" id="name">
+    <span id="span"></span>
+    <br><br>
+    <input type="button" value="checkPattern" onclick="checkPattern()">
+</body>
+</html>

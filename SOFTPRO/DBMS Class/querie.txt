@@ -1,0 +1,51 @@
+SELECT MAX(salary) "maximum salary is " FROM employee;
+select * from employee where salary  = SELECT MAX(salary) "maximum salary is " FROM employee;
+SELECT MIN(salary) "maximum salary is " FROM employee;
+
+
+SELECT * FROM employee 
+GROUP by salary
+order by salary DESC LIMIT 1,1
+
+for second highest
+
+select max(salary) from employee where ( salary < select (max ) from employee)
+
+
+for second lowest
+
+
+SELECT * FROM employee 
+GROUP by salary
+order by salary ASC LIMIT 1,1
+
+select min(salary) from employee where salary > select min (salary ) from employee
+
+for all records (entire row)
+
+selct * from employee where ( select max(salary) from employee  where (select max(salry) from employee ) )
+
+
+
+
+
+CREATE TABLE firsttable(
+    id INT PRIMARY KEY AUTO_INCREMENT,
+    NAME VARCHAR(50),
+    branch VARCHAR(50),
+    college VARCHAR(20)
+);
+
+CREATE TABLE secondtable(
+    id INT,
+    NAME VARCHAR(50),
+    class VARCHAR(50),
+    address VARCHAR(50),
+    college VARCHAR(20),
+    FOREIGN KEY(id) REFERENCES firsttable(id)
+);
+
+
+
+INSERT INTO firsttable
+VALUES(1, 'Mohit', 'CSE', 'JIT'),(2, 'Meraj', 'CSE', 'JIT'),(3, 'Avneesh', 'CSE', 'JIT'),(4, 'Aman', 'CSE', 'JIT'),(5, 'Shahanwaz', 'CSE', 'JIT'),(6, 'Shikha', 'CSE', 'JIT'),(7, 'Shahid', 'CSE', 'JIT'),(8, 'Mudassir', 'CSE', 'JIT'),(9, 'Sameer', 'CSE', 'JIT'),(10, 'Gufran', 'CSE', 'JIT');

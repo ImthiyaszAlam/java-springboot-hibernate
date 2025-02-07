@@ -1,0 +1,126 @@
+JAVA developed :1991
+By James Gosling , in laboratory Sun -Microsystem named Oak .renamed java in 1995;
+
+Token : Smallest individual unit of a program .anything and everything in a program is known as token.
+5 categories 
+
+1. keywords : reserved words having predefined meaning.
+2. identifier : these are user-defined .eg: calss name,variable name, object name ,method name
+Limitations o declare an identifier :
+a . should not be a keyword
+b. should not start with a digit
+c. should not consist of any special symbol except underscore (_) and dollar ($)
+d. case sensitivity (small and cap letters are different)
+
+Variables : the entities whose values varies during the execution .variables are the empty box of memory in which usually constants are stored.
+
+3.Literals / constant : the entities whose values are fixed during execution of a program
+4.Punctuators /separators: the entities deals with the protocol (rules and regulations) of the program
+5. Operators : special symbols used to perform operations among operands (constants and variables )
+Types 
+
+i> Arithematic operators (+ , - , * , / , %)
+ii> Relational operators ( < , > , <= >= , == ,!=)
+iii> Logical operator (AND (&&) , OR (||) , NOT (!))
+iv> Assignment operator (=)
+
+
+
+DATA TYPE : it define the type of data of a constant which is there in the variable.
+
+pirmitive :
+Numeric and non-numeric 
+
+Primitive:
+Integer 
+byte : -128 to 127 
+short : 32768 to 32767
+int:  -2b to +2b-1 (2^31)
+long (-2^61 to -2^61-1)
+
+
+Floating point
+float
+double 
+
+
+
+Non numeric 
+
+Character
+char 
+
+Boolean
+boolean true/false 
+
+Non-primitive / Refference 
+
+
+
+
+PACKAGES : collection of classes ,sub classes and packages ,sub packages and interfaces
+package > class > functions(methods)
+
+class jp1{
+
+
+
+public static void main(String args[]){
+int a  = 10;
+int b = 20;
+int c ;
+c  = a+b;
+System.out.println("sum" + c)
+
+}
+
+
+
+}
+
+class : a keyword
+public : access specifier 
+static :modifier
+void : return type 
+main: function name 
+String args : arraay arguments of String type  ,args :identifier String is a keyword 
+
+
+Access specifier : 
+4 types :
+public ,private , protected , default
+public : Members ( classes , methods , fields ) members are accessible in any class within any package 
+private: Members (methods ) are accessible within same class only 
+protected : Members methods are accessible within the same package  or in sub classes of different package 
+default : Members (classes ,  methods ,fields) are accesible within the same package only 
+
+
+
+
+static : it define the entity is directly related to class
+non- static :defines that the entity is not related to class but an instance of a class
+
+System :class
+out : object
+println : a method of PrintStream class
+
+
+To compile a java program
+javac <filename.java>
+TO run a java program
+java <classname>
+
+
+
+Input ;
+.next method : used to take input from user 
+Integer --> .nextInt(); for int value
+Double --> .nextDouble(); for float values 
+String --> .next();    (doesn't include spaces )
+String --> .nextLine();
+
+Package : utitlity ---util
+
+classname objectname  = new classname;
+new keyword :to create temporary memory 
+

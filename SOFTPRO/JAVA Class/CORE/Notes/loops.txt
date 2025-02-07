@@ -1,0 +1,52 @@
+Iterative Construct (LOOP) : Loop is an iterative construct through which we can achieve exection of a particular statement multiple times .In loop iteration (reptition) is performed according to some rules 
+
+
+RULES: 
+initialization
+condition
+updation
+
+TYPES:
+while
+do-while
+for
+for-each
+
+while: also known as entry controlled loop, means condition for execution is checked in the starting;
+
+syntax:
+initialization;
+while(condition){
+//loop body
+updation;
+}
+
+do-while;
+also known as exit controlled loop ,means condition for execution is checked at the end 
+
+syntax:
+
+initialization;
+do{
+
+//loop body 
+updation;
+
+}while(condition);
+
+FOR:
+
+initialization , condition and updation are written in one line only but the execution is performed same as while loop;
+synatx:
+
+for(initialization , condition, updation){
+//loop body
+}
+Shorthand property;
+
+
+i+=1; i++ ,i*=10 , i/=10;
+
+
+
+

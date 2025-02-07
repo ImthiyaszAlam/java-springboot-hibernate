@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <script src="https://kit.fontawesome.com/68bda705f2.js" crossorigin="anonymous"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Popup Practice</title>
+    <style>
+
+        .openingLink i{
+            font-size: 100px;
+        }
+
+        .popupFormClass{
+            display: none;
+            position: fixed;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            width: 300px;
+            padding: 20px;
+            border: 1px solid #ccc;
+            background-color: #f9f9f9;
+            z-index: 1000;
+        }
+
+        .openingLink{
+            position: fixed;
+            top: 30%;
+            left: 0;
+        }
+
+        .overLayClass{
+            display: none;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.5);
+            z-index: 999;
+        }
+
+        input, textarea, button {
+            display: block;
+            margin-bottom: 10px;
+            width: 200px;
+            height: 30px;
+        }
+        
+        button {
+            padding: 8px 12px;
+        }
+
+        .para{
+            font-size: 20px;
+            padding: 10% 30%;
+            text-align: justify;
+        }
+
+    </style>
+</head>
+<body>
+
+    <div class="openingLink" id="openPopup">
+        <a href="#"><i class="fa-solid fa-message"></i></a>
+    </div>
+
+    <div class="overLayClass" id="overLayId"></div>
+    <div class="popupFormClass" id="popupFormId">
+        <input type="text" placeholder="Name">
+        <input type="email" placeholder="Email">
+        <button type="submit">Submit</button>
+        <button onclick="closePopup()">Close</button>
+        
+    </div>
+
+
+    <p class="para">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat facilis harum accusamus similique nesciunt, quasi facere molestias consequuntur animi dolorem non! Recusandae voluptas nihil repellendus enim quae non ipsam alias!
+    Quo, vero aspernatur voluptas maxime distinctio, optio dicta illo delectus autem, assumenda natus id enim in ipsam nobis facilis explicabo minus! Voluptas sit cum impedit dolorem deserunt natus repellat aliquam?
+    Aliquid voluptates nemo laudantium esse accusantium similique, nobis officiis dolorem iusto minus, quaerat voluptatum deleniti et beatae harum illum labore sapiente vero non nulla libero quo nesciunt cupiditate delectus. Suscipit.
+    Corporis quia itaque quisquam, ea eum, rem unde quae accusamus mollitia provident exercitationem asperiores pariatur consequuntur, praesentium est sunt a quod quasi dolorem recusandae facere. Nobis porro blanditiis saepe velit?
+    Eum voluptas delectus accusamus deserunt sed beatae assumenda distinctio nesciunt. Eligendi vero adipisci voluptates corrupti nostrum odio atque illum numquam cum veniam blanditiis tempore voluptatem reiciendis nulla repellat, quos architecto!
+    Voluptate rerum fuga porro, at exercitationem deserunt obcaecati reiciendis pariatur esse sunt aliquam nulla quo modi! Voluptatem nostrum accusantium commodi iste, deserunt adipisci, placeat ea beatae earum, reiciendis dicta architecto.
+    Alias totam molestiae illum, in voluptas iure voluptatibus nostrum quis asperiores repellat aliquam placeat voluptate ipsa nulla tempora a sequi sit dolore adipisci aliquid? Cumque commodi nam amet reiciendis architecto!
+    Rerum earum culpa, deserunt velit cumque explicabo dolores assumenda eum molestiae. Dignissimos adipisci atque nam eum. Amet, porro incidunt eveniet aliquam nobis nesciunt sequi non minima laborum voluptate odio excepturi.
+    Eligendi iusto magnam beatae necessitatibus quidem nisi aut quia hic ea, sequi animi odit id facere mollitia officia nihil quibusdam nostrum magni itaque voluptatem provident quos exercitationem optio. Quam, at?
+    Enim nihil, obcaecati cumque natus alias dolores laudantium, deleniti consequuntur hic recusandae sunt expedita doloribus asperiores ab, odit iure aperiam eum dolorem dolor nemo. Sunt voluptas necessitatibus expedita odit atque.</p>
+
+    
+    <p class="para">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat facilis harum accusamus similique nesciunt, quasi facere molestias consequuntur animi dolorem non! Recusandae voluptas nihil repellendus enim quae non ipsam alias!
+        Quo, vero aspernatur voluptas maxime distinctio, optio dicta illo delectus autem, assumenda natus id enim in ipsam nobis facilis explicabo minus! Voluptas sit cum impedit dolorem deserunt natus repellat aliquam?
+        Aliquid voluptates nemo laudantium esse accusantium similique, nobis officiis dolorem iusto minus, quaerat voluptatum deleniti et beatae harum illum labore sapiente vero non nulla libero quo nesciunt cupiditate delectus. Suscipit.
+        Corporis quia itaque quisquam, ea eum, rem unde quae accusamus mollitia provident exercitationem asperiores pariatur consequuntur, praesentium est sunt a quod quasi dolorem recusandae facere. Nobis porro blanditiis saepe velit?
+        Eum voluptas delectus accusamus deserunt sed beatae assumenda distinctio nesciunt. Eligendi vero adipisci voluptates corrupti nostrum odio atque illum numquam cum veniam blanditiis tempore voluptatem reiciendis nulla repellat, quos architecto!
+        Voluptate rerum fuga porro, at exercitationem deserunt obcaecati reiciendis pariatur esse sunt aliquam nulla quo modi! Voluptatem nostrum accusantium commodi iste, deserunt adipisci, placeat ea beatae earum, reiciendis dicta architecto.
+        Alias totam molestiae illum, in voluptas iure voluptatibus nostrum quis asperiores repellat aliquam placeat voluptate ipsa nulla tempora a sequi sit dolore adipisci aliquid? Cumque commodi nam amet reiciendis architecto!
+        Rerum earum culpa, deserunt velit cumque explicabo dolores assumenda eum molestiae. Dignissimos adipisci atque nam eum. Amet, porro incidunt eveniet aliquam nobis nesciunt sequi non minima laborum voluptate odio excepturi.
+        Eligendi iusto magnam beatae necessitatibus quidem nisi aut quia hic ea, sequi animi odit id facere mollitia officia nihil quibusdam nostrum magni itaque voluptatem provident quos exercitationem optio. Quam, at?
+        Enim nihil, obcaecati cumque natus alias dolores laudantium, deleniti consequuntur hic recusandae sunt expedita doloribus asperiores ab, odit iure aperiam eum dolorem dolor nemo. Sunt voluptas necessitatibus expedita odit atque.</p>
+    
+    <script>
+
+        document.getElementById("openPopup").addEventListener("click",function(){
+            document.getElementById("popupFormId").style.display="block";
+            document.getElementById("overLayId").style.display="block";
+        })
+
+        function closePopup(){
+            document.getElementById("popupFormId").style.display="none";
+            document.getElementById("overLayId").style.display="none";
+        }
+
+    </script>
+</body>
+</html>

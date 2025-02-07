@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Length</title>
+    <script>
+        function checkMobile(){
+            var mNumber = document.getElementById("mobNo").value;
+            if(mNumber.length !=10){
+                document.getElementById("mobNo").style.border="2px solid red"
+                document.getElementById("mobNo").style.cursor="pointer"
+                document.getElementById("span").innerHTML="<b>Valid Number is required</b>"
+                document.getElementById("span").style.color="red"
+            }
+            else{
+                document.getElementById("span").innerText="Number Validated"
+                document.getElementById("span").style.color="green"
+                document.getElementById("mobNo").style.border=""
+            }
+        }
+    </script>
+</head>
+<body>
+
+    Mobile 
+    <br>
+    <br>
+    <input type="number" name="" id="mobNo" placeholder="type Number">
+    <span id="span"></span>
+
+    <br>
+    <br>
+    <input type="button" value="Check" onclick="checkMobile()">
+    
+</body>
+</html>

@@ -1,0 +1,9 @@
+MATH CLASS:
+
+Math class is predefined classes in java .consist of mathematical methods eg:
+
+Math.sqrt(value);
+Math.cbrt(27) = 3
+Math.pow(base,power);
+Math.ceil(5.1) = 6;
+Math.floor(2.9) = 2;

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Password</title>
+
+    <script>
+        function checkPassword(){
+            var password = document.getElementById("pw").value;
+            var spanElement  = document.getElementById("span")
+
+            if(password.length<=3){
+                spanElement.innerHTML="Weak Password";
+                spanElement.style.color="red";
+            }
+            else if(password.length>3 && password.length<=6){
+                spanElement.innerHTML="Weak Password";
+                spanElement.style.color="yellow";
+            }
+
+            else{
+                spanElement.innerHTML="Strong Password";
+                spanElement.style.color="green";
+            }
+        }
+    </script>
+</head>
+<body>
+
+    <b>Password</b>
+
+    <br><br>
+
+    
+
+    <input type="password"  id="pw" onkeyup="checkPassword()">
+    <span id="span"></span>
+
+    <br><br>
+    <input type="button" value="Check" onclick="checkPassword()">
+    
+</body>
+</html>

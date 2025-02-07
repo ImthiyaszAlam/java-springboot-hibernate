@@ -1,0 +1,39 @@
+INTERFACE: Collection of abstract methods(methods having only method declaration but not definition)
+
+syntax:
+
+interface interface_name{
+//abstract methods 
+}
+
+eg:
+interface MyInterface{
+void m1(); //public abstract void m1();
+void m2(); //public abstract void m2();
+void m3(); //public abstract void m3();
+}
+class testInterface implements MyInterface{
+//definitions of m1(),m2(),m3();
+}
+
+Interface, abstract and class:
+if you have requirements but you don't know about it's implementation then you can use interfaces because interface containe abstarct methods.
+
+1. An interface can inherit another interface 
+2. you can't create object of interface.
+
+ABSTRACT CLASS:
+it contains abstract methods and implemented methods as well.
+if you have requirements ,you know about implementation but not complete implementation we can use abstarct class. bcz it contains abstract and implemented methods as well.
+
+1. abstract class can implement interface
+2. abstract class can inherit another abstract class .
+3. can't create object of abstract class.
+
+
+CLASS: if you have requirements and you know about all implementation then you can use class because class contain implemented methods only
+
+1. class can implement interfaces 
+2. class can inhrit abstract class 
+3. class can inherit another class
+4. class can create object of class

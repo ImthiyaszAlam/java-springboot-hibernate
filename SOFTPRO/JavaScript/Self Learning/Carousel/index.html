@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Carousels</title>
+    <link rel="stylesheet" href="style.css">
+
+    <style>
+
+        *{
+            margin:0 ;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        .mainContainer{
+            width: 100%;
+            height: 100vh;  
+            margin: auto;
+            position: relative;
+        }
+
+        .slide{
+            height: 50%;
+            width: 80%;
+            margin: auto;
+            margin-top: 10%;
+            position: absolute;
+        }
+
+        .slide img{
+            margin-top: 10%;
+            height: 100%;
+            width: 100%;
+        }
+
+        .arrow{
+            height: 50px;
+            width: 50px;
+            font-size: 50px;
+            margin: 50px;
+            cursor: pointer;
+            position: absolute;
+            top: 45%;
+            color: #000;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 10px 20px;
+            border-radius: 50%;
+            background-color: #fff;
+            
+        }
+
+        .next{
+            right: 18%;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="mainContainer">
+        <div class="slide">
+            <img src="images/shadi1.jpg" >
+        </div>
+        <div class="slide">
+            <img src="images/shadi2.jpg" >
+        </div>
+        <div class="slide">
+            <img src="images/shadi3.jpg" >
+        </div>
+        <div class="slide">
+            <img src="images/shadi4.jpg" >
+        </div>
+        <div class="slide">
+            <img src="images/shadi5.jpg" >
+        </div>
+
+        <span class="arrow prev">&#10094;</span>
+        <span class="arrow next">&#10095;</span>
+        
+    </div>
+
+    <link href="script.js">
+    
+</body>
+</html>

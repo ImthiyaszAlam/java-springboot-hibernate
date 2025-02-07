@@ -1,0 +1,1003 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ludo</title>
+    <style>
+        #outer{
+            height: 1100px;
+            width: 1100px;
+            border: 1px solid black;
+            
+        }
+        #row1{
+            height: 400px;
+            width: 1100px;
+           
+
+        }
+
+        #row2{
+            height: 300px;
+            width: 1097px;
+           
+        }
+
+        #row3{
+            height: 400px;
+            width: 1100px;
+        }
+        #redbox{
+            width: 395px;
+            height: 397px;
+            background-color: red;
+            float: left;
+            border: 1px solid black;
+
+        }
+        #redwhitebox{
+            height: 250px;
+            width: 250px;
+            background-color: white;
+            margin-top: 75px;
+            margin-left: 75px;
+        }
+        #redrow1{
+            height: 125px;
+            width: 250px;
+        }
+        #redone{
+            height: 50px;
+            width: 50px;
+            background-color: red;
+            border-radius: 25px;
+            margin-left: 30px;
+            margin-top: 30px;
+            float: left;
+        }
+        #redtwo{
+            height: 50px;
+            width: 50px;
+            background-color: red;
+            border-radius: 30px;
+            margin-right: 30px;
+            margin-top: 30px;
+            float: right;
+        }
+        #redrow2{
+            height: 125px;
+            width: 250px;
+        }
+        #redrone{
+            height: 50px;
+            width: 50px;
+            background-color: red;
+            border-radius: 30px;
+            margin-left: 30px;
+            margin-top: 30px;
+            float: left;
+        }
+        #redrtwo{
+            height: 50px;
+            width: 50px;
+            background-color: red;
+            border-radius: 30px;
+            margin-right: 30px;
+            margin-top: 30px;
+            float: right;
+        }
+        #col1white{
+            height: 400px;
+            width: 300px;
+            float: left;
+        }
+        #whitec1{
+            height: 395px;
+            width: 97px;
+            border:1px solid black;
+            float: left;
+        }
+        #whitec2{
+            height: 395px;
+            width: 97px;
+            border:1px solid black;
+            float: left;
+        }
+        #whitec3{
+            height: 395px;
+            width: 98px;
+            border:1px solid black;
+            float: left;
+        }
+        #whitec1box1{
+            width: 98px;
+            height: 64px;
+            border: 1px solid black;
+        }
+        #whitec1box2{
+            width: 98px;
+            height: 64px;
+            border: 1px solid black;
+        }
+        #whitec1box3{
+            width: 98px;
+            height: 64px;
+            border: 1px solid black;
+        }
+        #whitec1box4{
+            width: 98px;
+            height: 64px;
+            border: 1px solid black;
+        }
+        #whitec1box5{
+            width: 98px;
+            height: 64px;
+            border: 1px solid black;
+        }
+        #whitec1box6{
+            width: 98px;
+            height: 64px;
+            border: 1px solid black;
+        }
+        #whitec2box1{
+            width: 98px;
+            height: 64px;
+            border: 1px solid black;
+           
+        }
+        #whitec2box2{
+            width:98px;
+            height: 64px;
+            border: 1px solid black;
+            background-color: green;
+        }
+        #whitec2box3{
+            width:98px;
+            height: 64px;
+            border: 1px solid black;
+            background-color: green;
+        }
+        #whitec2box4{
+            width: 98px;
+            height: 64px;
+            border: 1px solid black;
+            background-color: green;
+        }
+        #whitec2box5{
+            width: 98px;
+            height: 64px;
+            border: 1px solid black;
+            background-color: green;
+        
+        }
+        #whitec2box6{
+            width: 98px;
+            height: 64px;
+            border: 1px solid black;
+            background-color: green;
+        }
+        #whitec3box1{
+            width: 98px;
+            height: 64px;
+            border: 1px solid black;
+        }
+        #whitec3box2{
+            width: 98px;
+            height: 64px;
+            border: 1px solid black;
+            background-color: green;
+        }
+        #whitec3box3{
+            width: 98px;
+            height: 64px;
+            border: 1px solid black;
+        }
+        #whitec3box4{
+            width: 98px;
+            height: 64px;
+            border: 1px solid black;
+        }
+        #whitec3box5{
+            width:98px;
+            height: 64px;
+            border: 1px solid black;
+            
+        }
+        #whitec3box6{
+            width: 98px;
+            height: 64px;
+            border: 1px solid black;
+        }
+
+        #greenbox{
+            width: 395px;
+            height: 397px;
+            background-color: green;
+            float: left;
+            border: 1px solid black;
+
+        }
+        #greenwhitebox{
+            height: 250px;
+            width: 250px;
+            background-color: white;
+            margin-top: 75px;
+            margin-left: 75px;
+        }
+        #greenrow1{
+            height: 125px;
+            width: 250px;
+        }
+        #greenone{
+            height: 50px;
+            width: 50px;
+            background-color: green;
+            border-radius: 25px;
+            margin-left: 30px;
+            margin-top: 30px;
+            float: left;
+        }
+        #greentwo{
+            height: 50px;
+            width: 50px;
+            background-color:green;
+            border-radius: 30px;
+            margin-right: 30px;
+            margin-top: 30px;
+            float: right;
+        }
+        #greenrow2{
+            height: 125px;
+            width: 250px;
+        }
+        #greenrone{
+            height: 50px;
+            width: 50px;
+            background-color: green;
+            border-radius: 30px;
+            margin-left: 30px;
+            margin-top: 30px;
+            float: left;
+        }
+        #greenrtwo{
+            height: 50px;
+            width: 50px;
+            background-color: green;
+            border-radius: 30px;
+            margin-right: 30px;
+            margin-top: 30px;
+            float: right;
+        }
+        #row2whitebox1{
+            height: 300px;
+            width: 395px;
+            border: 1px solid black;
+            float: left;
+        }
+       
+
+        #row2box1r1{
+            width: 395px;
+            height: 98px;
+            border: 1px solid black;
+        }
+        #row2box1r2{
+            width: 395px;
+            height: 98px;
+            border: 1px solid black;
+        }
+        #row2box1r3{
+            width: 395px;
+            height: 98px;
+            border: 1px solid black;
+        }
+        #whiter1box1{
+            height: 98px;
+            width: 64px;
+            border: 1px solid black;
+            float: left;
+        }
+        #whiter1box2{
+            height: 98px;
+            width: 64px;
+            border: 1px solid black;
+            float: left;
+            background-color: red;
+        }
+        #whiter1box3{
+            height: 98px;
+            width: 64px;
+            border: 1px solid black;
+            float: left;
+        }
+        #whiter1box4{
+            height: 98px;
+            width: 64px;
+            border: 1px solid black;
+            float: left;
+        }
+        #whiter1box5{
+            height: 98px;
+            width: 65px;
+            border: 1px solid black;
+            float: left;
+        }
+        #whiter1box6{
+            height: 98px;
+            width: 61px;
+            border: 1px solid black;
+            float: left;
+        }
+        #whiter2box1{
+            height: 98px;
+            width: 64px;
+            border: 1px solid black;
+            float: left;
+        }
+        #whiter2box2{
+            height: 98px;
+            width: 64px;
+            border: 1px solid black;
+            float: left;
+            background-color: red;
+        }
+        #whiter2box3{
+            height: 98px;
+            width: 64px;
+            border: 1px solid black;
+            float: left;
+            background-color: red;
+        }
+        #whiter2box4{
+            height: 98px;
+            width: 64px;
+            border: 1px solid black;
+            float: left;
+            background-color: red;
+        }
+        #whiter2box5{
+            height: 98px;
+            width: 64px;
+            border: 1px solid black;
+            float: left;
+            background-color: red;
+        }
+        #whiter2box6{
+            height: 98px;
+            width: 61px;
+            border: 1px solid black;
+            float: left;
+            background-color: red;
+        }
+        #whiter3box1{
+            height: 98px;
+            width: 64px;
+            border: 1px solid black;
+            float: left;
+        }
+        #whiter3box2{
+            height: 98px;
+            width: 64px;
+            border: 1px solid black;
+            float: left;
+        }
+        #whiter3box3{
+            height: 98px;
+            width: 64px;
+            border: 1px solid black;
+            float: left;
+        }
+        #whiter3box4{
+            height: 98px;
+            width: 64px;
+            border: 1px solid black;
+            float: left;
+        }
+        #whiter3box5{
+            height: 98px;
+            width: 64px;
+            border: 1px solid black;
+            float: left;
+        }
+        #whiter3box6{
+            height: 98px;
+            width: 62px;
+            border: 1px solid black;
+            float: left;
+        }
+        #victory{
+            height: 300px;
+            width: 300px;
+            border: 1px solid black;
+            float:left;
+            
+        } 
+        #trianglered{
+width: 0;
+height: 0;
+border-bottom: 150px solid transparent;
+border-top: 150px solid transparent;
+border-left: 150px solid red;
+float:left;
+}
+#triangleyellow
+{
+width: 0;
+height: 0;
+border-bottom: 150px solid transparent;
+border-top: 150px solid transparent;
+border-right: 150px solid yellow;
+float:left;
+}
+#triangleblue
+{
+width: 0;
+height: 0;
+border-left: 150px solid transparent;
+border-right: 150px solid transparent;
+border-bottom: 150px solid blue;
+}
+#trianglegreen
+{
+width: 0;
+height: 0;
+border-left: 150px solid transparent;
+border-right: 150px solid transparent;
+border-top: 150px solid green;
+}
+
+        #row2white2box2{
+            height: 300px;
+            width: 395px;
+            border: 1px solid black;
+            float: left;
+        }
+        #white2box2r1{
+            height: 96px;
+            width:394px ;
+           
+            float: left;
+
+        }
+        #white2box2r2{
+            height: 98px;
+            width:394px ;
+            border: 1px solid black;
+            float: left;
+
+        }
+        #white2box2r3{
+            height: 98px;
+            width:394px ;
+            
+            float: left;
+
+        }
+        #white2r1box1{
+            height: 98px;
+            width: 64px;
+            border: 1px solid black;
+            float: left;
+        }
+        #white2r1box2{
+            height: 98px;
+            width: 64px;
+            border: 1px solid black;
+            float: left;
+        }
+        #white2r1box3{
+            height: 98px;
+            width: 64px;
+            border: 1px solid black;
+            float: left;
+        }
+        #white2r1box4{
+            height: 98px;
+            width: 64px;
+            border: 1px solid black;
+            float: left;
+        }
+        #white2r1box5{
+            height: 98px;
+            width: 63px;
+            border: 1px solid black;
+            float: left;
+        }
+        #white2r1box6{
+            height: 98px;
+            width: 62px;
+            border: 1px solid black;
+            float: left;
+        }
+        #white2r2box1{
+            height: 98px;
+            width: 64px;
+            border: 1px solid black;
+            float: left;
+            background-color: yellow;
+        }
+        #white2r2box2{
+            height: 98px;
+            width: 64px;
+            border: 1px solid black;
+            float: left;
+            background-color: yellow;
+        }
+        #white2r2box3{
+            height: 98px;
+            width: 64px;
+            border: 1px solid black;
+            float: left;
+            background-color: yellow;
+        }
+        #white2r2box4{
+            height: 98px;
+            width: 64px;
+            border: 1px solid black;
+            float: left;
+            background-color: yellow;
+        }
+        #white2r2box5{
+            height: 98px;
+            width: 63px;
+            border: 1px solid black;
+            float: left;
+            background-color: yellow;
+        }
+        #white2r2box6{
+            height: 98px;
+            width: 62px;
+            border: 1px solid black;
+            float: left;
+        }
+        #white2r3box1{
+            height: 102x;
+            width: 64px;
+            border: 1px solid black;
+            float: left;
+        }
+        #white2r3box2{
+            height: 102px;
+            width: 64px;
+            border: 1px solid black;
+            float: left;
+        }
+        #white2r3box3{
+            height: 102px;
+            width: 64px;
+            border: 1px solid black;
+            float: left;
+        }
+        #white2r3box4{
+            height: 102px;
+            width: 64px;
+            border: 1px solid black;
+            float: left;
+        }
+        #white2r3box5{
+            height: 102px;
+            width: 63px;
+            border: 1px solid black;
+            float: left;
+            background-color: yellow;
+        }
+        #white2r3box6{
+            height: 102px;
+            width: 62px;
+            border: 1px solid black;
+            float: left;
+        }
+        #bluebox{
+            width: 395px;
+            height: 397px;
+            background-color: blue;
+            float: left;
+            border: 1px solid black;
+
+        }
+        #bluewhitebox{
+            height: 250px;
+            width: 250px;
+            background-color: white;
+            margin-top: 75px;
+            margin-left: 75px;
+        }
+        #bluerow1{
+            height: 125px;
+            width: 250px;
+        }
+        #blueone{
+            height: 50px;
+            width: 50px;
+            background-color: blue;
+            border-radius: 25px;
+            margin-left: 30px;
+            margin-top: 30px;
+            float: left;
+        }
+        #bluetwo{
+            height: 50px;
+            width: 50px;
+            background-color: blue;
+            border-radius: 30px;
+            margin-right: 30px;
+            margin-top: 30px;
+            float: right;
+        }
+        #bluerow2{
+            height: 125px;
+            width: 250px;
+        }
+        #bluerone{
+            height: 50px;
+            width: 50px;
+            background-color: blue;
+            border-radius: 30px;
+            margin-left: 30px;
+            margin-top: 30px;
+            float: left;
+        }
+        #bluertwo{
+            height: 50px;
+            width: 50px;
+            background-color: blue;
+            border-radius: 30px;
+            margin-right: 30px;
+            margin-top: 30px;
+            float: right;
+        }
+        #col1white{
+            height: 400px;
+            width: 300px;
+            float: left;
+        }
+        #whitec1{
+            height: 395px;
+            width: 97px;
+            border:1px solid black;
+            float: left;
+        }
+        #whitec2{
+            height: 395px;
+            width: 97px;
+            border:1px solid black;
+            float: left;
+        }
+        #whitec3{
+            height: 395px;
+            width: 98px;
+            border:1px solid black;
+            float: left;
+        }
+        #whitec1box12{
+            width: 98px;
+            height: 64px;
+            border: 1px solid black;
+        }
+        #whitec1box22{
+            width: 98px;
+            height: 64px;
+            border: 1px solid black;
+        }
+        #whitec1box32{
+            width: 98px;
+            height: 64px;
+            border: 1px solid black;
+        }
+        #whitec1box42{
+            width: 98px;
+            height: 64px;
+            border: 1px solid black;
+        }
+        #whitec1box52{
+            width: 98px;
+            height: 64px;
+            border: 1px solid black;
+            background-color: blue;
+        }
+        #whitec1box62{
+            width: 98px;
+            height: 64px;
+            border: 1px solid black;
+        }
+        #whitec2box12{
+            width: 98px;
+            height: 64px;
+            border: 1px solid black;
+            background-color: blue;
+        }
+        #whitec2box22{
+            width:98px;
+            height: 64px;
+            border: 1px solid black;
+            background-color: blue;
+        }
+        #whitec2box32{
+            width:98px;
+            height: 64px;
+            border: 1px solid black;
+            background-color: blue;
+        }
+        #whitec2box42{
+            width: 98px;
+            height: 64px;
+            border: 1px solid black;
+            background-color: blue;
+        }
+        #whitec2box52{
+            width: 98px;
+            height: 64px;
+            border: 1px solid black;
+            background-color: blue;
+        }
+        #whitec2box62{
+            width: 98px;
+            height: 64px;
+            border: 1px solid black;
+        }
+        #whitec3box12{
+            width: 98px;
+            height: 64px;
+            border: 1px solid black;
+        }
+        #whitec3box22{
+            width: 98px;
+            height: 64px;
+            border: 1px solid black;
+        }
+        #whitec3box32{
+            width: 98px;
+            height: 64px;
+            border: 1px solid black;
+        }
+        #whitec3box42{
+            width: 98px;
+            height: 64px;
+            border: 1px solid black;
+        }
+        #whitec3box52{
+            width:98px;
+            height: 64px;
+            border: 1px solid black;
+           
+        }
+        #whitec3box62{
+            width: 98px;
+            height: 64px;
+            border: 1px solid black;
+        }
+
+        #yellowbox{
+            width: 395px;
+            height: 397px;
+            background-color: yellow;
+            float: left;
+            border: 1px solid black;
+
+        }
+        #yellowwhitebox{
+            height: 250px;
+            width: 250px;
+            background-color: white;
+            margin-top: 75px;
+            margin-left: 75px;
+        }
+        #yellowrow1{
+            height: 125px;
+            width: 250px;
+        }
+        #yellowone{
+            height: 50px;
+            width: 50px;
+            background-color: yellow;
+            border-radius: 25px;
+            margin-left: 30px;
+            margin-top: 30px;
+            float: left;
+        }
+        #yellowtwo{
+            height: 50px;
+            width: 50px;
+            background-color:yellow;
+            border-radius: 30px;
+            margin-right: 30px;
+            margin-top: 30px;
+            float: right;
+        }
+        #yellowrow2{
+            height: 125px;
+            width: 250px;
+        }
+        #yellowrone{
+            height: 50px;
+            width: 50px;
+            background-color: yellow;
+            border-radius: 30px;
+            margin-left: 30px;
+            margin-top: 30px;
+            float: left;
+        }
+        #yellowrtwo{
+            height: 50px;
+            width: 50px;
+            background-color: yellow;
+            border-radius: 30px;
+            margin-right: 30px;
+            margin-top: 30px;
+            float: right;
+        }
+    </style>
+</head>
+<body>
+    <div id="outer">
+        <div id="row1">
+            <div id="redbox">
+              <div id="redwhitebox">
+                <div id="redrow1">
+                    <div id="redone"></div>
+                    <div id="redtwo"></div>
+                </div>
+                <div id="redrow2">
+                    <div id="redrone"></div>
+                    <div id="redrtwo"></div>
+                </div>
+              </div>
+            </div>
+            <div id="col1white">
+                <div id="whitec1">
+                  <div id="whitec1box1"></div>
+                  <div id="whitec1box2"></div>
+                  <div id="whitec1box3"></div>
+                  <div id="whitec1box4"></div>
+                  <div id="whitec1box5"></div>
+                  <div id="whitec1box6"></div>
+                </div>
+                <div id="whitec2">
+                  <div id="whitec2box1"></div>
+                  <div id="whitec2box2"></div>
+                  <div id="whitec2box3"></div>
+                  <div id="whitec2box4"></div>
+                  <div id="whitec2box5"></div>
+                  <div id="whitec2box6"></div>
+                </div>
+                <div id="whitec3">
+                    <div id="whitec3box1"></div>
+                    <div id="whitec3box2"></div>
+                    <div id="whitec3box3"></div>
+                    <div id="whitec3box4"></div>
+                    <div id="whitec3box5"></div>
+                    <div id="whitec3box6"></div>
+                </div>
+            </div>
+            <div id="greenbox">
+                <div id="greenwhitebox">
+                  <div id="greenrow1">
+                      <div id="greenone"></div>
+                      <div id="greentwo"></div>
+                  </div>
+                  <div id="greenrow2">
+                      <div id="greenrone"></div>
+                      <div id="greenrtwo"></div>
+                  </div>
+                </div>
+              </div>
+        </div>
+        <div id="row2">
+            <div id="row2whitebox1">
+                <div id="row2box1r1">
+                    <div id="whiter1box1"></div>
+                    <div id="whiter1box2"></div>
+                    <div id="whiter1box3"></div>
+                    <div id="whiter1box4"></div>
+                    <div id="whiter1box5"></div>
+                    <div id="whiter1box6"></div>
+                </div>
+                <div id="row2box1r2">
+                    <div id="whiter2box1"></div>
+                    <div id="whiter2box2"></div>
+                    <div id="whiter2box3"></div>
+                    <div id="whiter2box4"></div>
+                    <div id="whiter2box5"></div>
+                    <div id="whiter2box6"></div>
+                </div>
+                
+                <div id="row2box1r3">
+                    <div id="whiter3box1"></div>
+                    <div id="whiter3box2"></div>
+                    <div id="whiter3box3"></div>
+                    <div id="whiter3box4"></div>
+                    <div id="whiter3box5"></div>
+                    <div id="whiter3box6"></div>
+                </div>
+                
+            </div> 
+            <div id="victory">
+                <div id="trianglered"></div>
+                <div id="triangleyellow"></div>
+                <div id="trianglegreen"></div>
+                <div id="triangleblue"></div>
+            </div>
+            <div id="row2white2box2">
+                <div id="white2box2r1">
+                    <div id="white2r1box1"></div>
+                    <div id="white2r1box2"></div>
+                    <div id="white2r1box3"></div>
+                    <div id="white2r1box4"></div>
+                    <div id="white2r1box5"></div>
+                    <div id="white2r1box6"></div>
+                </div>
+                <div id="white2box2r2">
+                    <div id="white2r2box1"></div>
+                    <div id="white2r2box2"></div>
+                    <div id="white2r2box3"></div>
+                    <div id="white2r2box4"></div>
+                    <div id="white2r2box5"></div>
+                    <div id="white2r2box6"></div>
+                </div>
+                <div id="white2box2r3">
+                    <div id="white2r3box1"></div>
+                    <div id="white2r3box2"></div>
+                    <div id="white2r3box3"></div>
+                    <div id="white2r3box4"></div>
+                    <div id="white2r3box5"></div>
+                    <div id="white2r3box6"></div>
+                </div>
+            </div>
+
+        </div>
+        <div id="row3">
+            <div id="bluebox">
+                <div id="bluewhitebox">
+                  <div id="bluerow1">
+                      <div id="blueone"></div>
+                      <div id="bluetwo"></div>
+                  </div>
+                  <div id="bluerow2">
+                      <div id="bluerone"></div>
+                      <div id="bluertwo"></div>
+                  </div>
+                </div>
+              </div>
+              <div id="col1white">
+                  <div id="whitec1">
+                    <div id="whitec1box12"></div>
+                    <div id="whitec1box22"></div>
+                    <div id="whitec1box32"></div>
+                    <div id="whitec1box42"></div>
+                    <div id="whitec1box52"></div>
+                    <div id="whitec1box62"></div>
+                  </div>
+                  <div id="whitec2">
+                    <div id="whitec2box12"></div>
+                    <div id="whitec2box22"></div>
+                    <div id="whitec2box32"></div>
+                    <div id="whitec2box42"></div>
+                    <div id="whitec2box52"></div>
+                    <div id="whitec2box62"></div>
+                  </div>
+                  <div id="whitec3">
+                      <div id="whitec3box12"></div>
+                      <div id="whitec3box22"></div>
+                      <div id="whitec3box32"></div>
+                      <div id="whitec3box42"></div>
+                      <div id="whitec3box52"></div>
+                      <div id="whitec3box62"></div>
+                  </div>
+              </div>
+              <div id="yellowbox">
+                  <div id="yellowwhitebox">
+                    <div id="yellowrow1">
+                        <div id="yellowone"></div>
+                        <div id="yellowtwo"></div>
+                    </div>
+                    <div id="yellowrow2">
+                        <div id="yellowrone"></div>
+                        <div id="yellowrtwo"></div>
+                    </div>
+                  </div>
+                </div>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Media Queries</title>
+    <style>
+       .box1{
+        width: 400px;
+        height: 400px;
+        border: 1px solid;
+        background-color: green;
+        color: white;
+        margin: auto;
+       } 
+
+       @media (min-width:500px){
+        .box1{
+            background-color: black;
+        }
+       }
+
+       @media (max-width:500px){
+        .box1{
+            background-color: yellow;
+            font-size: 100px;
+            font-weight: bold;
+        }
+       }
+    </style>
+</head>
+<body>
+
+    <div class="box1">
+        <p>Media Queries</p>
+    </div>
+    
+</body>
+</html>

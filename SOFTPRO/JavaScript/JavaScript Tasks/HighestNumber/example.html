@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Highest Number Finder</title>
+</head>
+<body>
+
+    <script>
+        // Array to store user input
+        const numbers = [];
+
+        // Prompt user to enter 10 numbers
+        for (let i = 0; i < 10; i++) {
+            let userInput = prompt(`Enter number ${i + 1}:`);
+            // Convert user input to a number and add it to the array
+            numbers.push(Number(userInput));
+        }
+
+        // Find the maximum number using Math.max() and spread operator
+        const maxNumber = Math.max(...numbers);
+
+        // Display the maximum number in an alert box
+        alert(`The highest number entered is: ${maxNumber}`);
+    </script>
+
+</body>
+</html>

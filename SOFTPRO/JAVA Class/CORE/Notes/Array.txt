@@ -1,0 +1,2 @@
+ARRAY: is the collection of memory in which values of similar data types are stored.
+SORTING;Arranging elements either in ascending or descending order

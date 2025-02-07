@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Table</title>
+    <script>
+        function createTable(){
+            var number = document.getElementById("numberTable").value;
+
+            var table="";
+            for(var i=1; i<=10; i++){
+                table = table+  number + " * " + i + " = " + (number * i) + "\n" ;
+            }
+
+            document.getElementById("outputArea").value = table;
+        }
+    </script>
+</head>
+<body>
+
+    <input type="text" id="numberTable" placeholder="Enter Number">
+    <input type="button" value="Table" onclick="createTable()">
+
+    <br><br>
+
+    <textarea  id="outputArea" cols="30" rows="10"></textarea>
+    
+</body>
+</html>

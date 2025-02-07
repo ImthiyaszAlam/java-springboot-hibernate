@@ -1,0 +1,21 @@
+Methods:
+Method is a block of code to perform specific task.
+i>user defined
+ii>pre-defined 
+
+userdefined i>static ii>non-static
+STATIC / NON-STATIC categories :
+i> with argument and with return type :public static int add(int a ,int b);
+ii> without argument and with return type : public static int add (); exit gate open 
+iii> with argument with no ruturn type  ; public static void add( int a ); exit gate closed
+iv> without argument and with no return type: public static void add() :  both gates closed 
+
+
+
+Constructor :
+a type of method which is used to initialize the data (instance variables) members .a method will act as a onstructor if name is same as class name and doesn't have return type not even void.
+
+
+Non-parameterized / default Constructor:it doesn't take any parameters / arguments from main method 
+parameterized constructor : which take parameters / arguments 
+

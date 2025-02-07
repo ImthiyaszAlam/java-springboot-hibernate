@@ -1,0 +1,753 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background: black;
+}
+
+a{
+    text-decoration: none;
+    color: white;
+}
+
+i{
+    color: white;
+    font: 20px;
+}
+img{
+    cursor: pointer;
+}
+
+.flexBox{
+    display: flex;
+    align-items: center;
+}
+
+/* NavBar */
+
+
+
+nav{
+    padding: 10px 2%;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    background-color: white;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: black;
+}
+
+.leftNav .logoIcon{
+    width: auto;
+}
+.leftNav img{
+    height: 30px;
+    width: auto;
+    margin-left: 20px;
+
+}
+
+.leftNav i{
+    color: white;
+    font-size: 20px;
+}
+
+.centerNav .voiceSearch{
+    width: 16px;
+}
+
+.searchBox{
+    border: 1px solid #fff;
+    margin-right: 15px;
+    padding: 8px 12px;
+    border-radius: 25px;
+    position: relative;
+}
+
+.searchBox::after{
+    content: "";
+    margin-right:55px;
+    height: 100%;
+    width: 1px;
+    position: absolute;
+    right: 0;
+    background-color: #fff;
+}
+
+/* .searchBox::after{
+    content: "";
+    height: 100%;
+    width: 55px;
+    position: absolute;
+    right: 0;
+    background-color: #252525;
+} */
+
+.searchBox input{
+    width: 400px;
+    border: 0;
+    outline: 0;
+    background: transparent;
+}
+
+.searchBox i{
+    color: white;
+    margin-right: 10px;
+}
+.rightNav img{
+    width: 20px;
+}
+
+.userIcon{
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+}
+
+
+
+
+
+.rightNav ul{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    list-style-type: none;
+    gap: 20px;
+    font-size: 20px;
+    
+}
+
+.rightNav ul i{
+    color: #fff;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* SideBar */
+
+
+
+
+.mainContent{
+    display: flex;
+    justify-content: space-between;
+    background-color: black;
+    position: relative;
+    top: 50px;
+}
+
+
+.sideBar{
+    width: 15%;
+    background: black;
+    height: 100%;
+    padding-left: 2%;
+    position: sticky;
+    left: 0;
+}
+
+.sideBar .shortCutLinks a {
+
+    text-decoration: none;
+    color: #fff;
+}
+
+.sideBar .shortCutLinks ul li i{
+    margin-right: 20px;
+}
+
+.sideBar .shortCutLinks ul li{
+    margin-bottom: 15px;
+    list-style-type: none;
+}
+.sideBar .shortCutLinks li:first-child{
+    color: red;
+}
+.lineHorizontal{
+    border: 0;
+    height: 1px;
+    width: 85%;
+    background-color: #ccc;
+    margin-bottom: 20px;
+}
+
+.sidebarHeadings{
+    color: white;
+}
+
+
+
+
+/* ShorcutLinks  2 */
+
+
+
+.shorcutLinks2{
+margin-top: 20px;
+}
+
+.shorcutLinks2 ul li i span{
+    margin-left: 20px;
+}
+
+
+
+.shorcutLinks2 ul li{
+    margin-bottom: 15px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.shorcutLinks2 ul li  i{
+margin-right: 20px;
+}
+
+
+.shorcutLinks2 ul{
+display: flex;
+justify-content: flex-start;
+flex-direction: column;
+list-style-type: none;
+color: #fff;
+}
+
+.shorcutLinks2 ul a{
+    text-decoration: none;
+    color: #fff;
+}
+
+/* ShortcutLinks 3 */
+
+.sidebarHeadings{
+    margin-bottom: 20px;
+}
+
+.sidebarHeadings i{
+    font-size: 15px;
+}
+.shorcutLinks3 img{
+    height: 20px;
+    width: 20px;
+    border-radius: 50%;
+    margin-right: 20px;
+}
+
+.shorcutLinks3 ul li {
+    margin-bottom: 15px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.shorcutLinks3 a {
+    text-decoration: none;
+    color: #fff;
+}
+
+/* Sidebar footer */
+
+.sidebarFooter a{
+    text-decoration: none;
+    margin-right: 10px;
+    color: #fff;
+    font-size: 13px;
+}
+
+.sidebarFooter{
+    margin-bottom: 10px;
+}
+
+
+
+
+
+/* Top Bar Right Section */
+
+
+.topBarRightSection{
+    width: 100%;
+    overflow: hidden;
+}
+
+
+.topBarRightSection ul{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 12px;
+}
+.topBarRightSection ul a{
+    text-decoration: none;
+    color: white;
+}
+.topBarRightSection ul li{
+    padding: 5px 10px;
+    border: 1px solid;
+    border-radius: 8px;
+    list-style-type: none;
+    background: #252525;
+
+}
+
+
+
+
+
+
+
+
+
+/* VideoSection */
+
+
+.banner img{
+    height: 250px;
+    width: 100%;
+    object-fit: cover;
+}
+.videoMainContainer{
+    padding-right: 2%;
+    padding-bottom: 20px;
+    width: 85%;
+    height: 100%;
+    position: absolute;
+    left: 15%;
+}
+
+.videoInfo a {
+    font-size: 15px;
+}
+
+.videoMainContainer .banner{
+    width: 100%;
+}
+
+.videoMainContainer .banner img{
+    width: 100%;
+    border-radius: 8px;
+}
+
+.videoListContainer{
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(250px , 1fr));
+    grid-column-gap: 16px;
+    grid-row-gap: 30px;
+    margin-top: 15px;
+    color: #fff;
+}
+
+.videoList .thumbNail{
+    width: 100%;
+    border-radius: 5px;
+}
+
+.videoList .flexBox{
+    align-items: flex-start;
+    margin-top: 7px;
+}
+
+.videoList .flexBox img{
+    width: 30px;
+    height: 30px;
+    margin-right: 10px;
+    border-radius: 50%;
+}
+
+.videoInfo{
+    color: #fff;
+    font-size: 13px;
+}
+.videoInfo a {
+    color: #fff;
+    font-weight: 600;
+    display: block;
+    margin-bottom: 5px;
+}
+
+
+/* Short Section */
+
+
+.shortSection{
+    width: 100%;
+    height: 400px;
+    margin-top: 20px;
+    color: white;
+    margin-bottom: 10px;
+}
+
+
+.shortDetail{
+    font-weight: 600;
+    font-size: 20px;
+    margin-bottom: 5px;
+}
+
+.shortSection i{
+    margin-right: 10px;
+    color: red;
+}
+.shortSection img{
+    width: 100%;
+    height: 280px;
+    border-radius: 15px;
+    margin-top: 20px;
+    object-fit: cover;
+}
+
+.shortSectionArea{
+    display: flex;
+    gap: 10px;
+}
+
+.showMoreShorts{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+    position: relative;
+
+}
+
+.showMoreShorts::before{
+    content: "";
+    height: 1px;
+    width: 42%;
+    background-color: white;
+    left: 0;
+}
+
+.showMoreShorts::after{
+    content: "";
+    height: 1px;
+    width: 40%;
+    background-color: white;
+    right: 0;
+}
+.showMoreShorts a{
+    padding: 5px 50px;
+    color: white;
+    gap: 10px;
+    border: 1px solid;
+    border-radius: 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Video Play Fragment */
+.playContainer{
+    padding-left: 2%;
+    background: black;
+    color: white;
+}
+
+.videoAndSuggestedVideo{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+
+
+.suggestedVideoSideList a {
+    text-decoration: none;
+    color: white;
+}
+
+.videoPlayFragment{
+    width: 72%;
+}
+.suggestedVideoList{
+    flex-basis: 27%;
+    padding-right: 2%;
+}
+
+.videoPlayFragment video{
+    width: 100%;
+}
+.suggestedVideoSideList{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 8px;
+}
+
+.suggestedVideoSideList img{
+    width: 100%;
+}
+
+.suggestedVideoSideList .smallThumbnail{
+    flex-basis: 49%;
+}
+
+.suggestedVideoSideList .suggestedVideoInfo{
+    flex-basis: 49%;
+}
+
+.videoTags a{
+    color: #fff;
+    font-size: 13px;
+    color: rgb(77, 153, 77);
+}
+
+.videoTitle{
+    font-size: 22px;
+    font-weight: 600;
+}
+
+
+
+/* Video Description */
+
+
+.playVideoDescription{
+    border-radius: 15px;
+    background: #252525;
+    color: white;
+    padding: 15px 10px;
+}
+
+.playVideoDescription .views{
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.playVideoDescription a {
+    font-weight: bold;
+}
+
+
+
+.leftEndChannel{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 10px; 
+}
+.rightEndChannel{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 10px;
+}
+
+.playVideoChannelInfo{
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    align-items: center;
+    margin: 10px 0;
+    box-shadow: rgba(0, 0, 0, 0.2);
+}
+
+.buttonAlign{
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 5px;
+    background: #252525;
+    padding: 5px 10px;
+    border-radius: 15px;
+}
+.likeAndDislikeButton{
+    display: flex;
+    gap: 5px;
+    align-items: center;
+}
+.channelImage img{
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+}
+.joinChannelButton{
+    border-radius: 15px;
+    padding: 5px 10px;
+    background: white;
+    color: black;
+}
+
+.subscribeButton{
+    border-radius: 15px;
+    background: white;
+    color: black;
+    padding: 5px 10px;  
+}
+
+
+
+
+
+/* CommentSection */
+
+
+.commentHead{
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+.commentHead img{
+    width: 30px;
+    margin-right: 5;
+    margin-left: 10px;
+}
+
+.commentHead .totalComments {
+    margin-right: 20px;
+}
+
+.commentHead  i{
+    margin-right: 10PX;
+}
+
+.addCommentBox{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+.addCommentBox .addCommentInput{
+    color: #fff;
+}
+.addCommentBox img{
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    margin-right: 5px;
+}
+.addCommentBox input{
+    width: 94%;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    padding: 10px;
+    background-color: black;
+}
+
+.allComments img{
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    margin-right: 5px;
+}
+
+/* Comments */
+
+.firstComment{
+    display: flex;
+    justify-content: flex-start;
+    margin-top: 20px;
+}
+
+.commentedPersonNameAndAgo{
+    display: flex;
+    justify-content: flex-start;
+    gap: 10px;
+    align-items: center;
+}
+
+.commentedPersonNameAndAgo .agoDuration{
+    font-size: 12px;
+}
+
+.commentInfo{
+    display: flex;
+    flex-direction: column;
+}
+
+.commentPersonInterations{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 10px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.commentPersonInterations i:hover{
+    padding: 4px 8px;
+    background-color: #252525;
+    border-radius: 15px;
+}
+
+.commentPersonInterations  .reply{
+    margin-left: 20px;
+    padding: 4px 8px;
+    border-radius: 15px;
+}
+
+.commentPersonInterations  .reply:hover{
+    background-color: #252525;
+}
+
+.commentOrFeedback a {
+    font-size: 20px;
+}
+
+.allReplies a i{
+    color: green;
+}
+
+.allReplies a {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 20px;
+    color: green;
+}
+
+.commentedPersonProfile img{
+    margin-right: 20px;
+}

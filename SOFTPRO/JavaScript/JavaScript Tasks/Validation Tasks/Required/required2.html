@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Required Validation</title>
+
+    <script>
+
+        function checkValidation() {
+            var name = document.getElementById("input").value;
+
+            if (name === "") {
+                document.getElementById("input").style.border = "2px solid red";
+                document.getElementById("sp").innerHTML = " Your name is Required"
+                document.getElementById("sp").style.color="red";
+            } else {
+                document.getElementById("input").style.border = "";
+            }
+        }
+
+    </script>
+</head>
+<body>
+
+
+    <input type="text" id="input">
+    <span id="sp"></span>
+    <br>
+    <br>
+    <input type="button" value="Check Validation" onclick="checkValidation()">
+
+    
+</body>
+</html>

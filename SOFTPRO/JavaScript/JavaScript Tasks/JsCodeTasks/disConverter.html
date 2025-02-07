@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Distance Converter</title>
+
+    <script>
+        function converToKilometers(){
+            var meter = document.getElementById("inputMeters").value;
+            var km = meter/1000;
+            document.getElementById("otputArea").value = km+"km";
+            // alert(meter);
+        }
+    </script>
+</head>
+<body>
+
+    <input type="number"  id="inputMeters" placeholder="Enter Meter">
+    <input type="button" value="Convert" onclick="converToKilometers()">
+
+    <br>
+    <br>
+
+    <textarea type="text" id="otputArea" placeholder="Kilometer">
+    
+</body>
+</html>

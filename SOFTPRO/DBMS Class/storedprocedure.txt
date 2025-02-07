@@ -1,0 +1,3 @@
+Stored procedure :
+
+this is user defined function .also called pre-compiled queries.

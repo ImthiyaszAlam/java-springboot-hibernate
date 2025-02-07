@@ -1,0 +1,233 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+
+
+.navbarCol{
+    height: 50px;
+}
+
+
+
+/* Common */
+.paddingse{
+    width: 100%;
+    padding: 2% 10%;
+}
+
+.paddingOnlyX{
+    width: 100%;
+    padding: 0 10%;  
+}
+
+
+
+
+/* Food Details */
+.paddingXaxisIn{
+    width: 100%;
+    margin-left: 10%;
+    margin-right: 10%;
+}
+
+
+
+
+
+
+
+
+
+/* Add Restaurant Page */
+
+
+/* Add Restaurant Common */
+
+.paddingxAxis{
+    padding: 4% 19%;
+}
+
+
+.whyJomatoPartnership{
+    margin-top: 300px;
+}
+
+.BenefitsItem span{
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    border: 1px solid;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 15px;
+}
+
+.sliderImageBenefits{
+    border-radius: 15px;
+}
+.sliderImageBenefits img{
+    border-radius: 15px;
+}
+
+
+
+
+
+
+
+/* Restaurant */
+
+
+
+
+
+
+.pupularHead{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+
+
+/* Food Details */
+
+.containerMarginxSide{
+    width: 100%;
+    margin: 0px 10%;
+}
+
+
+/* Login modal */
+
+/* Styles for the modal */
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0,0,0,0.5);
+}
+
+.modal-content {
+  background-color: #fff;
+  margin: 15% auto;
+  padding: 20px;
+  border: 1px solid #888;
+  width: 300px;
+}
+
+.close {
+  color: #aaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+
+/* Footer */
+
+.footerSection li  a{
+    text-decoration: none;
+    color: rgb(20, 18, 18);
+}
+.footerPara{
+    text-align: start;
+}
+
+/* Retaurants */
+
+
+/* Restaurant Location */
+
+.restaurantLocation{
+    width: 100%;
+    padding-left: 10%;
+    padding-right: 10%;
+}
+
+
+
+.location{
+    gap: 20px;
+}
+
+.locationStart{
+    margin-bottom: 35px;
+}
+
+.locationContent{
+    width: 100%;
+    border: 1px solid;
+    height: 60px;
+    border-radius: 5px;
+    align-items: center;
+    padding-left: 10%;
+    padding-right: 10%;
+    box-shadow:1px 1px 1px 1px rgba(0, 0, 0, 1);
+}
+
+.locationContent a {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 60px;
+    text-decoration: none;
+    color: black;
+    font-size: 20px;
+}
+
+.locationContent a i{
+    font-size: 12px;
+}
+
+.delivarySection li i{
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    border: 1px solid;
+    margin-right: 10px;
+}
+
+.restaurantList1 :hover{
+    box-shadow: 0px 0px 10px 5px rgba(0, 0, 0, 0.3);
+}
+
+
+/* Zomato/ Home */
+
+.paddingxyHome{
+    width: 100%;
+    padding: 3% 10%;
+}
+.paraHeading{
+    font-size: 2rem;
+    color: black;
+    text-align: start;
+}
+
+/* Blog */
+
+.paddingxyBlog{
+    width: 100%;
+    padding: 0% 14%;
+}
+
+
+
+

@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Required</title>
+
+    <script>
+        function check(){
+            var name = document.getElementById("tb").value;
+
+            if(name === ""){
+                document.getElementById("tb").style.border = "2px solid red";
+                document.getElementById("sp").innerHTML = "Please enter a name";
+            } else {
+                document.getElementById("tb").style.border = "";
+                document.getElementById("sp").innerHTML = "Valid Name";
+            }
+        }
+    </script>
+</head>
+<body>
+    <input type="text" id="tb"> <br> <br>
+    <input type="button" value="Check" onclick="check()">
+    <span id="sp"></span>
+</body>
+</html>

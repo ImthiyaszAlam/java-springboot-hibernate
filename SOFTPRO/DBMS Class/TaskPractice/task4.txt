@@ -1,0 +1,143 @@
+CREATE TABLE bookstore(
+    bookid INT PRIMARY KEY AUTO_INCREMENT,
+    isbnno VARCHAR(15),
+    program VARCHAR(15),
+    branch VARCHAR(105),
+    SUBJECT VARCHAR(105),
+    bookname VARCHAR(150),
+    authorname VARCHAR(150)
+);
+
+INSERT INTO bookstore
+VALUES
+('TMBU1', '123456', 'B.tech', 'CSE', 'C', 'Let\'s C', 'Y.P Kanetkar'),
+('TMBU2', '123456', 'B.tech', 'CSE', 'C', 'Let\'s C', 'Y.P Kanetkar'),
+('TMBU3', '123456', 'B.tech', 'CSE', 'C', 'Let\'s C', 'Y.P Kanetkar'),
+('TMBU4', '123456', 'B.tech', 'CSE', 'java', 'effective java', 'Blouch'),
+('TMBU5', '123456', 'B.tech', 'CSE', 'java', 'effective java', 'Blouch'),
+('TMBU6', '123456', 'B.tech', 'CSE', 'java', 'effective java', 'Blouch'),
+('TMBU7', '123456', 'B.tech', 'CSE', 'java', 'effective java', 'Blouch'),
+('TMBU8', '123456', 'B.tech', 'IT', 'DATABASE', 'RDBMS', 'Mishra');
+
+
+
+SELECT bookid,isbnno,program,bookname,authorname FROM bookstore;
+SELECT * FROM `bookstore` WHERE branch = 'CSE'
+SELECT COUNT(*) "Let's c " FROM bookstore WHERE bookname = 'Let''s c'
+UPDATE bookstore SET authorname ='Vipin c ' WHERE  bookid = 7;
+DELETE FROM bookstore WHERE bookid = 7;
+
+
+
+
+
+CREATE TABLE issuebook(
+    issueid INT PRIMARY KEY AUTO_INCREMENT,
+    bookid VARCHAR(15),
+    FOREIGN KEY(bookid) REFERENCES bookstore(bookid),
+    rollno INT,
+    studentname VARCHAR(50),
+    bookname VARCHAR(100),
+    authorname VARCHAR(100)
+);
+
+INSERT INTO issuebook
+VALUES(
+    101,
+    '1',
+    1001,
+    'Rajat singh',
+    'Let''s c',
+    'Y.p Kanetkar'
+),(
+    102,
+    '1',
+    1002,
+    'Rajat singh',
+    'Effective java ',
+    'bloch'
+),(
+    103,
+    '1',
+    1003,
+    'Dinesh ',
+    'Let''s c',
+    'Y.p Kanetkar'
+),(
+    104,
+    '1',
+    1004,
+    'Nisha ',
+    'Effective java',
+    'bloch'
+);
+
+
+
+
+
+SELECT
+    bookstore.bookid,
+    bookstore.isbnno,
+    issuebook.rollno,
+    issuebook.studentname,
+    bookstore.bookname,
+    bookstore.authorname
+FROM
+    bookstore
+INNER JOIN issuebook ON bookstore.bookid = issuebook.bookid;
+
+
+
+
+
+
+
+
+SELECT
+    bookstore.bookid,
+    bookstore.isbnno,
+    issuebook.rollno,
+    issuebook.studentname,
+    bookstore.bookname,
+    bookstore.authorname
+FROM
+    bookstore
+LEFT JOIN issuebook ON bookstore.bookid = issuebook.bookid
+UNION
+SELECT
+    bookstore.bookid,
+    bookstore.isbnno,
+    issuebook.rollno,
+    issuebook.studentname,
+    bookstore.bookname,
+    bookstore.authorname
+FROM
+    bookstore
+RIGHT JOIN issuebook ON bookstore.bookid = issuebook.bookid;
+
+
+4.7
+
+
+CREATE TABLE STAFF(
+    staffid VARCHAR(10) PRIMARY KEY,
+    staffname VARCHAR(50),
+    staffdept VARCHAR(100),
+    salary INT
+);
+
+
+
+INSERT INTO staff(
+    staffid,
+    staffname,
+    staffdept,
+    salary
+)
+VALUES('1', 'John Doe', 'IT', 50000),('2', 'Jane Smith', 'HR', 45000),(
+    '3',
+    'Michael Johnson',
+    'Finance',
+    60000
+);

@@ -1,0 +1,217 @@
+
+
+.PlayListDetailsImage{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 300px;
+    width: 100%;
+    padding-left: 2%;
+    
+}
+
+
+
+.imageSection{
+    height: 87%;
+    width: 220px;
+    background-color: rgb(18, 20, 18);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    padding-bottom: 20px;
+}
+
+.imageSection .iconAndHead{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-top: 10px;
+}
+
+.iconAndHead i{
+    margin-right: 50px;
+    margin-left: 20px;
+}
+
+.imageSection  img{
+    height: 60%;
+    width: 200px;
+    object-fit: cover;
+    position: absolute;
+    bottom: 0;
+    padding-bottom: 20px;
+}
+.interationAndDurations{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 10px;
+    position: absolute;
+}
+
+.playListDetailsInterations{
+    width: 77%;
+    margin-top: 60px;
+}
+
+.playListDetailsInterations h1{
+    font-size: 70px;
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+.playListDetailsInterations .headDetails{
+    margin-bottom: 15px;
+    color: grey;
+}
+
+
+
+
+
+/* Song Headings  */
+
+
+
+.interationListSection{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    font-size: 30px;
+    gap: 30px;
+    margin-top: 5px;
+    padding-bottom: 30px;
+
+}
+
+.interaction{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding-left: 2%;
+    padding-right: 2%;
+    font-size: 30px;
+    gap: 30px;
+    
+}
+
+.interaction .playButtonIcon{
+    height: 60px;
+    width: 60px;
+    border-radius: 50%;
+    background: green;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 15px;
+    color: black;
+}
+
+.list{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    font-size: 30px;
+    gap: 20px;
+    padding-right: 10px;
+}
+
+.songHeadings{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding-left: 2%;
+    padding-right: 2%;
+    margin-top: 20px;
+}
+
+
+.songHeadings .title{
+    width: 40%;
+}
+
+.songHeadings .album{
+    width: 25%;
+}
+
+.songHeadings .date{
+    width: 25%;
+}
+
+.songHeadings i{
+    width: 10%;
+}
+
+
+
+
+.songList{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding-left: 2%;
+    padding-right: 2%;
+    margin-bottom: 10px;
+
+}
+
+.albumName{
+    width: 25%;
+}
+
+.postedDate{
+    width: 25%;
+}
+
+.songDuration{
+    width: 10%;
+}
+.songInfo{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 10px;
+    width: 40%;
+}
+
+.serialImage{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.serialImage p{
+    margin-right: 20px;
+}
+
+.songInfo img{
+    height: 40px;
+    width: 40px;
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0px;
+}
+
+.songNameArtist{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.playListDesignLine{
+    margin-left: 2%;
+    margin-right: 2%;
+    margin-bottom: 30px;
+    margin-top: 10px;
+}
+
+.songNameArtist .SongName{
+    font-weight: bold;
+    margin-bottom: 3px;
+}

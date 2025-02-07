@@ -1,0 +1,371 @@
+.navbar {
+    color: black;
+    position: relative;
+    top: 54px;
+    height: 7vh;
+    padding-left: 100px;
+
+  }
+
+  .navbar ul img {
+    display: inline-block;
+    position: relative;
+    /* top: 6px; */
+    width: 160px;
+    bottom: 48px;
+    z-index: -1;
+
+  }
+
+  .navbar ul li {
+    display: inline;
+    font-size: 17px;
+    padding: 10px 21px;
+    text-align: center;
+    position: relative;
+    bottom: 59px;
+
+  }
+
+  .navbar ul li:hover {
+    background: white;
+    /* width: 100px; */
+    color: rgb(233, 230, 73);
+    cursor: pointer;
+
+  }
+
+  .arrow {
+    position: absolute;
+    top: 13px;
+  }
+
+  .drop1 {
+    display: inline-block;
+
+  }
+
+  .dropdown1 {
+    display: none;
+    background: white;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    height: 15rem;
+    padding: 0px;
+    width: 12rem;
+    color: rgb(8, 8, 77);
+    position: absolute;
+    /* left: 370px; */
+    top: -5px;
+
+  }
+
+  .drop1:hover .dropdown1 {
+    display: block;
+  }
+
+  .dropdown1 ul li {
+    position: relative;
+    top: 10px;
+    display: block;
+  }
+
+  .drop2 {
+    display: inline-block;
+  }
+
+  .dropdown2 {
+    display: none;
+    background: white;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    color: rgb(16, 32, 68);
+    position: absolute;
+    top: -5px;
+    left: 0rem;
+    /* margin-left: -0.5px;    */
+    height: 35rem;
+    width: 100%;
+    padding: 40px;
+    border-radius: 20px;
+
+  }
+
+  .dropdown2 ul li {
+    display: flex;
+    position: relative;
+    width: 370px;
+    margin: -9px;
+    font-size: 15px;
+    top: 0px;
+    right: 0px;
+  }
+
+  .dropdown2 ul li h3 {
+    font-size: 17px;
+  }
+
+
+
+  .drop2:hover .dropdown2 {
+    display: flex;
+  }
+
+  .drop3 {
+    display: inline-block;
+
+  }
+
+  .dropdown3 {
+    display: none;
+    background: white;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    height: 18.7rem;
+    width: 15.8rem;
+    color: rgb(8, 8, 77);
+    position: absolute;
+    /* left: 370px; */
+    top: -5px;
+
+  }
+
+  .drop3:hover .dropdown3 {
+    display: block;
+  }
+
+  .dropdown3 ul li {
+    position: relative;
+    top: 10px;
+    display: block;
+  }
+
+  .drop3 {
+    display: inline-block;
+
+  }
+
+  .drop4 {
+    display: inline-block;
+  }
+
+  .dropdown4 {
+    display: none;
+    background: white;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    color: rgb(8, 8, 77);
+    position: absolute;
+    top: -5px;
+    /* margin-left: -0.5px;      */
+    height: 14.8rem;
+    width: 12.5rem;
+
+  }
+
+  .dropdown4 ul li {
+    display: block;
+    position: relative;
+    width: 200px;
+    font-size: 16px;
+    top: -8px;
+    right: 0px;
+  }
+
+  .dropdown4 ul li h3 {
+    font-size: 20px;
+  }
+
+
+  .drop4:hover .dropdown4 {
+    display: flex;
+  }
+
+  .student {
+    display: inline-block;
+
+  }
+
+
+  .studentdrop {
+    display: none;
+    background: white;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    color: rgb(8, 8, 77);
+    position: absolute;
+    top: 0px;
+    left: 10.5rem;
+    /* margin-left: -0.5px;    */
+    height: 9.5rem;
+    width: 12.6rem;
+
+  }
+
+  .studentdrop ul li {
+    display: flex;
+    position: relative;
+    width: 200px;
+    font-size: 16px;
+    top: 0px;
+    right: 0px;
+  }
+
+  .studentdrop ul li h3 {
+    font-size: 20px;
+  }
+
+  .student:hover .studentdrop {
+    display: flex;
+  }
+
+  .teacher {
+    display: inline-block;
+
+  }
+
+  .teacherdrop {
+    display: none;
+    background: white;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    color: rgb(8, 8, 77);
+    position: absolute;
+    top: 38px;
+    left: 11.4rem;
+    /* margin-left: -0.5px;    */
+    height: 4.8rem;
+    width: 14.5rem;
+
+  }
+
+  .teacherdrop ul li {
+    display: flex;
+    position: relative;
+    width: 230px;
+    font-size: 16px;
+    top: 1px;
+    right: 0px;
+  }
+
+  .teacherdrop ul li h3 {
+    font-size: 20px;
+  }
+
+
+
+  .teacher:hover .teacherdrop {
+    display: flex;
+  }
+
+  .drop5 {
+    display: inline-block;
+  }
+
+  .dropdown5 {
+    display: none;
+    background: white;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    color: rgb(8, 8, 77);
+    position: absolute;
+    top: -5px;
+    /* margin-left: -0.5px;      */
+    height: 6.8rem;
+    width: 12.5rem;
+
+  }
+
+  .dropdown5 ul li {
+    display: block;
+    position: relative;
+    width: 200px;
+    font-size: 16px;
+    top: -8px;
+    right: 0px;
+  }
+
+  .dropdown5 ul li h3 {
+    font-size: 20px;
+  }
+
+
+  .drop5:hover .dropdown5 {
+    display: flex;
+  }
+
+  .navbar .searchlogo {
+    position: absolute;
+    bottom: 90px;
+    left: 85rem;
+
+
+    /* border: 0.6px solid black; */
+    /* box-shadow: 0.5px 0.5px 0.5px 0.5px black; */
+
+  }
+
+  .searchlogo ion-icon {
+    position: absolute;
+    height: 1.4rem;
+    width: 1.4rem;
+    box-shadow: rgba(0, 0, 0, 0.05) 0px 6px 24px 0px, rgba(0, 0, 0, 0.08) 0px 0px 0px 1px;
+    padding: 5px;
+  }
+
+  .navbar .searchlogo:hover {
+    cursor: pointer;
+  }
+
+  .name {
+    background: gold;
+    height: 50px;
+    font-weight: bold;
+    position: relative;
+    top: 0px;
+    bottom: 50px;
+    color: rgb(18, 18, 163);
+    z-index: -1;
+  }
+
+  .name p {
+    position: relative;
+    bottom: 50px;
+    font-size: 50px;
+  }
+
+  .name img {
+    position: relative;
+    top: 5px;
+    height: 40px;
+    right: 210px;
+  }
+
+
+  .body img {
+
+    position: relative;
+    /* bottom: 300px; */
+    height: auto;
+    width: 100%;
+    z-index: -10;
+  }
+
+  .jittext {
+    display: flex;
+    position: relative;
+    font-size: 30px;
+    left: 34%;
+    width: 34rem;
+    bottom: 170px;
+    padding: 30px 120px;
+    background: rgb(40, 40, 78);
+    color: rgb(192, 192, 4);
+    z-index: -1;
+
+  }
+
+  .jittext2 {
+    display: inline-block;
+    position: relative;
+    font-size: 30px;
+    left: 22rem;
+    bottom: 12rem;
+    padding: 40px 120px;
+    background: rgb(241, 189, 44);
+    color: rgb(39, 39, 77);
+    z-index: -1;
+  }

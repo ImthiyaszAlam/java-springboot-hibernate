@@ -1,0 +1,145 @@
+.headerContainer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 1400px;
+    margin-top: 200px;
+}
+
+.leftHeaader{
+width: 400px;
+background-color: skyblue;
+display: flex;
+justify-content: center;
+align-items: center;
+}
+
+.centerHeader{
+width: 400px;
+display: flex;
+justify-content: center;
+align-items: center;
+}
+
+.rightHeader{
+width: 400px;
+background-color: skyblue;
+display: flex;
+justify-content: center;
+align-items: center;
+text-align: justify;
+}
+
+.headerPara{
+    justify-content: center;
+    align-items: center;
+    display: flex;
+}
+
+.headerLine{
+    height: 2px;
+    width: 100%;
+    background-color: skyblue;
+}
+
+.topLeftSection{
+    display: flex;
+    flex-direction: column;
+}
+
+.topLeftSection{
+    margin-left: 100px;
+}
+
+.leftSectionContent{
+    display: flex;
+    justify-content: space-between;
+    width: 800px;
+    align-items: center;
+}
+
+.leftSectionContentLeft{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: justify;
+    width: 350px;
+
+}
+
+.leftSectionContentRight{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: justify;
+    width: 350px;
+}
+
+.imageContentSection img{
+    height: 200px;
+    width: 800px;
+    background-color: gray;
+}
+
+.leftBottomSection{
+    width: 800px;
+    margin-left: 100px;
+}
+.leftBottomContentSection{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.leftBottomLeftContent{
+width: 350px;
+text-align: justify;
+}
+.leftBottomRightContent{
+width: 350px;
+}
+
+.leftBottomRightContent img{
+    height: 200px;
+    width: 350px;
+}
+
+.contentSection{
+    display: flex;
+}
+.rightSection{
+    width: 500px;
+    margin-left: 100px;
+
+}
+
+.topRightSection{
+    background-color: skyblue;
+}
+.topRightImage img{
+    width: 400px;
+}
+
+.topRightHeading{
+
+}
+
+.footer{
+    height: 100px;
+    width: 1400px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.leftFooter{
+    width: 800px;
+    background-color: gray;
+    margin-left: 100px;
+    height: 100px;
+}
+.rightFooter{
+    width: 500px;
+    background-color: green;
+    height: 100px;
+}

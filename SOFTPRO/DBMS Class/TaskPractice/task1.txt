@@ -1,0 +1,20 @@
+create database mydbPractice;
+create table student
+(
+rollno int PRIMARY KEY AUTO_INCREMENT,
+    name varchar(50),
+    branch varchar(100),
+    fee int
+);
+
+INSERT INTO student
+VALUES(1001, 'Rohit', 'CS', 12000),(1002, 'Mohit', 'CS', 12000),(1003, 'Shobhit', 'IT', 15000),(1004, 'Mudit', 'IT', 15000);
+
+
+
+SELECT * FROM student
+SELECT rollno,name,branch FROM student
+SELECT * FROM `student` WHERE branch = 'IT';
+SELECT * FROM `student` WHERE rollno = 1003;
+SELECT * FROM `student` WHERE fee >12000
+SELECT rollno,name,fee FROM `student` WHERE rollno = 1002
